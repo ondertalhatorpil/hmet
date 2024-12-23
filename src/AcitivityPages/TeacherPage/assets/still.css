@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.background{
+    background: url('./Öğretmen\ Akademisi.png');
+}
+
+.ye-akademi{
+    width: 100%;
+    height: 70vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.TeacherBannerDesc {
+    background: url('./Öğretmen Akademisi_png.png');
+    width: 100%;
+    height: 110vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: "Montserrat", serif;
+    padding: 1rem; /* Mobil için padding ekledim */
+  }
+  
+  .TeacherBannerDesc h1 {
+    color: #fff;
+    font-size: clamp(1.75rem, 4vw, 3.125rem); 
+    margin-bottom: 2%;
+    font-weight: 700;
+    padding-top: 10%;
+    text-align: center;
+  }
+  
+  .TeacherBannerDesc p {
+    width: 90%; /* Mobilde daha geniş alan */
+    max-width: 1200px; /* Maximum genişlik */
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.25rem); /* 16px - 20px arası responsive */
+    color: #fff;
+    margin: 0 auto;
+  }
+
+
+  
+  /* Tablet ve küçük masaüstü için */
+  @media (min-width: 768px) {
+    .TeacherBannerDesc {
+      padding: 2rem;
+    }
+    
+    .TeacherBannerDesc p {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .TeacherBannerDesc p {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .TeacherBannerDesc {
+      height: auto;
+      min-height: 100vh;
+    }
+    
+    .TeacherBannerDesc h1 {
+      padding-top: 1% !important;
+      font-size: 40px !important;
+      margin-bottom: .5rem;
+      text-align: left;
+    }
+    .TeacherBannerDesc p {
+        width: 100% !important;
+        font-size: 18px !important;
+        text-align: left;
+      }
+  }
+  
+  @media (max-width: 400px) {
+    .TeacherBannerDesc {
+      height: auto;
+      min-height: 100vh;
+    }
+    
+    .TeacherBannerDesc h1 {
+      padding-top: 1% !important;
+      font-size: 25px !important;
+      margin-bottom: .5rem;
+      text-align: left;
+    }
+    .TeacherBannerDesc p {
+        width: 100% !important;
+        font-size: 14px !important;
+        text-align: left;
+      }
+  }

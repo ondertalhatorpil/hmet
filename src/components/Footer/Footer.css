@@ -1,0 +1,74 @@
+/* Footer.css */
+.HomeFooterContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  border-top: 1.23px solid rgba(255, 255, 255, 0.08);
+}
+
+.HomeFooterContainer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.HomeFooterContainer li {
+  color: #A5ABB6;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 2.2;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.HomeFooterContainer li:hover {
+  color: #ffffff;
+}
+
+.HomeFooterContainer p {
+  color: aliceblue;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0 1rem;
+  line-height: 1.5;
+}
+
+/* Mobil için medya sorgusu */
+@media screen and (max-width: 768px) {
+  .HomeFooterContainer {
+    padding: 2rem 0.5rem;
+  }
+
+  .HomeFooterContainer ul {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+  }
+
+  .HomeFooterContainer li {
+    font-size: 0.9rem;
+  }
+
+  .HomeFooterContainer p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Çok küçük ekranlar için */
+@media screen and (max-width: 480px) {
+  .HomeFooterContainer ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .HomeFooterContainer p {
+   text-align: center;
+  }
+}

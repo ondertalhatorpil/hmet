@@ -1,0 +1,284 @@
+.aboutBanner{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background: linear-gradient(#0c302f,#1b8b85);
+}
+.aboutBannerDesc{
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.aboutBannerDesc h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: #92FEFF;
+}
+.aboutBannerDesc p{
+    width: 50%;
+    font-size: 18px;
+    font-weight: 600;
+    color: antiquewhite;
+}
+
+
+
+
+
+/* Teachers Grid */
+.teachers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1450px;
+  margin: 0 auto;
+  border-radius: 20px 0;
+}
+
+/* Teacher Card */
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.teacher-image-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 0.75rem;
+}
+
+.teacher-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.teacher-image:hover {
+  filter: grayscale(0);
+}
+
+.corner-decoration {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #00b7c7;
+  border-bottom: 2px solid #00b7c7;
+}
+
+.teacher-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d1b69;
+  margin-bottom: 0.4rem;
+}
+
+.teacher-title {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+/* Bio Button */
+.bio-button {
+  background: none;
+  border: none;
+  color: #646464;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.bio-button:hover {
+  color: #1B8A84;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.bio-button:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.modal-content h2 {
+  color: #2d1b69;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.modal-content h3 {
+  color: #666;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+.modal-content p {
+  line-height: 1.6;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+  z-index: 2;
+}
+
+.close-button:hover {
+  color: #1B8A84;
+}
+
+/* Modal Scrollbar */
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Responsive Design */
+@media (min-width: 1400px) {
+  .teachers-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .teachers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .teachers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .modal-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .teachers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .teacher-image-container {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .modal-content {
+    padding: 1.25rem;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.25rem;
+  }
+  
+  .modal-content h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teachers-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .teacher-image-container {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .teacher-name {
+    font-size: 1rem;
+  }
+  
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+  
+  .close-button {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}
