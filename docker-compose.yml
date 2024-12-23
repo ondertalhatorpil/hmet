@@ -1,16 +1,6 @@
-version: '3.8'
-
 services:
-  web:
-    build: 
+  hikmetinizinde:
+    build:
       context: .
-      dockerfile: Dockerfile
-    container_name: hikmetinizinde-web
     ports:
-      - "8080:80"
-    networks:
-      - web_network
-
-networks:
-  web_network:
-    driver: bridge
+      - "3000:80"
