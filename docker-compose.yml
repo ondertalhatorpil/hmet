@@ -21,8 +21,8 @@ services:
       - /etc/letsencrypt:/etc/letsencrypt
       - ./build:/usr/share/nginx/html
     ports:
-      - "8080:80"   # HTTP için 8080 portu
-      - "8443:443"  # HTTPS için 8443 portu
+      - "7080:80"   # HTTP için 7080 portu
+      - "7443:443"  # HTTPS için 7443 portu
     depends_on:
       - web
     networks:
