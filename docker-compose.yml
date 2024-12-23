@@ -1,10 +1,6 @@
-version: '3.8'
-
 services:
-  web:
-    build: 
+  hikmetinizinde:
+    build:
       context: .
-      dockerfile: Dockerfile
-    container_name: hikmetinizinde-web
     ports:
-      - "3000:80"
+      -"8121:80"
