@@ -1,0 +1,6 @@
+services:
+  hikmetinizinde:
+    build:
+      context: .
+    ports:
+      - "8121:3000"
