@@ -16,11 +16,12 @@ const ManagerHeader = () => {
     ];
 
     return (
-        <Header 
-            logo={Logo}
-            menuItems={customMenuItems}
-            buttonText="KAYIT OL"
-        />
+        <Header
+        logo={Logo}
+        menuItems={customMenuItems}
+        buttonText="KAYIT OL"
+        registerLink="https://form.onder.org.tr/app/form?id=wsGmtA" 
+      />
     )
 }
 

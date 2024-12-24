@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import img1 from '../assets/images/HomeTeamİmage/IMG_7324.JPG'
-import img2 from '../assets/images/HomeTeamİmage/IMG_7306.JPG'
-import img3 from '../assets/images/HomeTeamİmage/IMG_7282.JPG'
-
+import img1 from '../assets/images/img1.png'
 
 const HomeAbout = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -43,16 +40,6 @@ const HomeAbout = () => {
                             <img src={img1} 
                                 alt="Front" 
                                 className="image image-front" 
-                                loading="lazy"
-                            />
-                            <img src={img2} 
-                                alt="Back 1" 
-                                className="image image-back-1" 
-                                loading="lazy"
-                            />
-                            <img src={img3} 
-                                alt="Back 2" 
-                                className="image image-back-2" 
                                 loading="lazy"
                             />
                         </div>
