@@ -854,6 +854,46 @@ const seminerler = [
         }
       ]
     }
+  },
+  {
+    seminerNo: 24,
+    title: "Evrim Serisi",
+    speakers: [
+      {
+        name: "Dr. İbrahim Çağrı Kurt",
+        institution: "Boğaziçi Üniversitesi Öğretim Üyesi"
+      }
+    ],
+    detailData: {
+      sessions: [
+        {
+          number: 1,
+          title: "Evren, Samanyolu ve Dünya evrimsel süreçlerle mi yaratıldı?",
+          speaker: "Dr. İbrahim Çağrı Kurt",
+          startDate: "8 Ocak Çarşamba",
+          endDate: "19.00"
+        },
+        {
+          number: 2,
+          title: "Mikrop, bitki, hayvan ve Âdemoğlu evrimsel süreçlerle mi yaratıldı?",
+          speaker: "Dr. İbrahim Çağrı Kurt",
+          startDate: "15 Ocak Çarşamba",
+          endDate: "21.00"
+        },{
+          number: 3,
+          title: "Evrim, İslam ile uyumlu mudur? - 1",
+          speaker: "Dr. İbrahim Çağrı Kurt",
+          startDate: "22 Ocak Çarşamba",
+          endDate: "21.00"
+        },{
+          number: 4,
+          title: "Evrim, İslam ile uyumlu mudur? - 2",
+          speaker: "Dr. İbrahim Çağrı Kurt",
+          startDate: "8 Ocak Çarşamba",
+          endDate: "21.00"
+        },
+      ]
+    }
   }
 ];
 
