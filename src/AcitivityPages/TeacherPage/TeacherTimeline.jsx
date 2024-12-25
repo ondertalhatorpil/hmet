@@ -245,15 +245,15 @@ const seminerler = [
       },
       {
         name: "Ramazan Kayan",
-        institution: "Özgün İrade Dergisi Genel Yayın Yönetmeni"
+        institution: "Namaz Gönüllüleri Platformu"
       },
       {
         name: "Ahmet Bulut",
-        institution: "Marmara Üniversitesi İlahiyat Fakültesi"
+        institution: "Namaz Gönüllüleri Platformu"
       },
       {
-        name: "Kerim Buladı",
-        institution: "İstanbul İl Vaizliği"
+        name: "Prof. Dr. Kerim Buladı",
+        institution: "Namaz Gönüllüleri Platformu"
       }
     ],
     detailData: {
@@ -295,7 +295,7 @@ const seminerler = [
     speakers: [
       {
         name: "Fatma Serap Karamollaoğlu",
-        institution: "Hacettepe Üniversitesi Eczacılık Fakültesi"
+        institution: "Eğitimci - Yazar"
       }
     ],
     detailData: {
@@ -337,7 +337,7 @@ const seminerler = [
     speakers: [
       {
         name: "Doç. Dr. Ahmet Ekşi",
-        institution: "SUSEM"
+        institution: "Kocaeli Üniversitesi İlahiyat Fakültesi"
       }
     ],
     detailData: {
@@ -421,7 +421,7 @@ const seminerler = [
     speakers: [
       {
         name: "Prof. Dr. Recep Şentürk",
-        institution: "Columbia University"
+        institution: "Hamad Bin Khalifa Üniversitesi İslami İlimler Fakültesi Dekanı"
       }
     ],
     detailData: {

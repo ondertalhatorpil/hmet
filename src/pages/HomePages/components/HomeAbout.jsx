@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import img1 from '../assets/images/img1.png'
+import img1 from '../assets//images/img1.png'
 
 const HomeAbout = () => {
     const [isVisible, setIsVisible] = useState(false);

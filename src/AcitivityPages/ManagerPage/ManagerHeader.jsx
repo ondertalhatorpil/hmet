@@ -1,6 +1,6 @@
 // ManagerHeader.jsx
 import React from 'react'
-import Logo from '../../pages/HomePages/assets/images/Yönetici Logo.png'
+import Logo from '../../pages/HomePages/assets//images/Yönetici Logo.png'
 import Header from '../../components/Header/Header'
 
 const ManagerHeader = () => {

@@ -19,7 +19,7 @@ const Seminer = () => {
         {
           name: "Prof. Dr. Yaşar BÜLBÜL",
           institution: "İstanbul Medeniyet Üniversitesi Rektör Yardımcısı",
-          image: require('../../../assets/images/Yaşar Bülbül-Photoroom.png')
+          image: '/images/Yasar Bülbül.png'
         }
       ],
       detailData: {
@@ -41,7 +41,7 @@ const Seminer = () => {
         {
           name: "Mehmet Kürşat ÇAPAR",
           institution: "NEGMAR Teknoloji Grup Başkanı",
-          image: require('../../../assets/images/Mehmet Kürşat Çapar-Photoroom.png')
+          image: '/images/mehmetkursat.png'
         }
       ],
       detailData: {
@@ -62,8 +62,8 @@ const Seminer = () => {
       speakers: [
         {
           name: "Doç. Dr. Özkan ÖZTÜRK",
-          institution: "Kartal Anadolu İmam Hatip Lisesi Müdür",
-          image: require('../../../assets/images/öZKAN öZTÜRK-Photoroom.png')
+          institution: "Kartal AİHL Müdürü",
+          image: '/images/ozkanozturk.png'
         }
       ],
       detailData: {
@@ -85,7 +85,7 @@ const Seminer = () => {
           {
             name: "Doç. Dr. Yasin ÇAKIREL",
             institution: "Kırklareli Üniversitesi, İktisadi ve İdari Bilimler Fakültesi",
-            image: require('../../../assets/images/YasinÇ-Photoroom.png')
+            image: '/images/yasinel.png'
           }
         ],
         detailData: {
@@ -107,7 +107,7 @@ const Seminer = () => {
           {
             name: "Dr. Sümeyye KUŞAKÇI",
             institution: "İbn Haldun Üniversitesi, Yönetim Bilimleri Fakültesi",
-            image: require('../../../assets/images/Sümeyye Kuşakçı-Photoroom.png')
+            image: '/images/sumeyyekusakcı.png'
           }
         ],
         detailData: {
@@ -129,7 +129,7 @@ const Seminer = () => {
           {
             name: "Dr. Akın BULUT",
             institution: " İbn Haldun Üniversitesi",
-            image: require('../../../assets/images/Akın Bulut-Photoroom.png')
+            image: '/images/Akın Bulut.png'
           }
         ],
         detailData: {
@@ -150,8 +150,8 @@ const Seminer = () => {
         speakers: [
           {
             name: "Dr. Mustafa ÖZEL",
-            institution: "Mehmet Vakıf Üniversitesi İslami İlimler Fakültesi",
-            image: require('../../../assets/images/mustafa-ozel-Photoroom.png')
+            institution: "İktisatçı - Yazar",
+            image: '/images/mustafaozel.png'
           }
         ],
         detailData: {

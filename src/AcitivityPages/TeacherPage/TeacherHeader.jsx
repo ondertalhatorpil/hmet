@@ -1,6 +1,6 @@
 // TeacherHeader.jsx
 import React from 'react'
-import Logo from '../../pages/HomePages/assets/images//Öğretmen Logo.png'
+import Logo from '../../pages/HomePages/assets//images//Öğretmen Logo.png'
 import Header from '../../components/Header/Header'
 
 const TeacherHeader = () => {

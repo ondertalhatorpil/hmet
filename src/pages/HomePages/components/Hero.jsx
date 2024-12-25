@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 
 import '../../HomePages/assets/HomePage.css'
 import '../../../pages/asstes/still.css'
-import Logo from '../assets/images/logo.svg'
+import Logo from '../assets//images/logo.svg'
 
-import Button1 from '../assets/images/Öğretmen Akademisi_png.png'
-import Button2 from '../assets/images/Yönetici Akademisi_png-01.png'
+import Button1 from '../assets//images/Öğretmen Akademisi_png.png'
+import Button2 from '../assets//images/Yönetici Akademisi_png-01.png'
 
 
-import YLogo from '../assets/images/Yönetici Logo.png'
-import ÖLogo from '../assets/images/Öğretmen Logo.png'
+import YLogo from '../assets//images/Yönetici Logo.png'
+import ÖLogo from '../assets//images/Öğretmen Logo.png'
 
-import İşOrtaklarımız from '../assets/images/İş Ortaklarımız.png'
+import İşOrtaklarımız from '../assets//images/İş Ortaklarımız.png'
 import HeroHeader from './HeroHeader'
 
 const Hero = () => {

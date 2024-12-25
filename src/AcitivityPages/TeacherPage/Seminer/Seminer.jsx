@@ -19,7 +19,7 @@ const Seminer = () => {
         {
           name: "Zahide Tuba Kor",
           institution: "Yazar",
-          image: require('../../../assets/images/Xahide Kor-Photoroom.png')
+          image: '/images/zahidekor.png'
         }
       ],
       detailData: {
@@ -62,7 +62,7 @@ const Seminer = () => {
         {
           name: "Dr. Ömer Kemal Buhari",
           institution: "İstanbul Medeniyet Üniversitesi Öğretim Üyesi",
-          image: require('../../../assets/images/Buhari.png')
+          image: '/images/omerkemali.png'
         }
       ],
       detailData: {
@@ -84,7 +84,7 @@ const Seminer = () => {
         {
           name: "Peren Birsaygılı Mut",
           institution: "Yazar",
-          image: require('../../../assets/images/Mut-Photoroom.png')
+          image: '/images/Peren Birsaygılı.png'
         }
       ],
       detailData: {
@@ -127,7 +127,7 @@ const Seminer = () => {
         {
           name: "Doç. Dr. Vahdettin Işık",
           institution: "İbn Haldun Üniversitesi, Medeniyetler İttifakı Enstitüsü",
-          image: require('../../../assets/images/Vahdettin Işık-Photoroom.png')
+          image: '/images/vahdettin.png'
         }
       ],
       detailData: {
@@ -162,8 +162,8 @@ const Seminer = () => {
       speakers: [
         {
           name: "Dr. İbrahim Çağrı Kurt",
-          institution: "MEB Bakan Danışmanı",
-          image: require('../../../assets/images/Ahmet Bulut.png')
+          institution: "Boğaziçi Üniversitesi Öğretim Üyesi",
+          image: '/images/ibrahimkurt.png'
         }
       ],
       detailData: {
@@ -206,22 +206,22 @@ const Seminer = () => {
         {
           name: "Abdullah Yıldız",
           institution: "Namaz Gönüllüleri Platformu",
-          image: require('../../../assets/images/Abdullah Yıldız.png')
+          image: '/images/abdullah yıldız.png'
         },
         {
           name: "Ramazan Kayan",
-          institution: "Özgün İrade Dergisi Genel Yayın Yönetmeni",
-          image: require('../../../assets/images/Ramazan KAYAN.png')
+          institution: "Eğitimci - Yazar",
+          image: '/images/ramazan kayan.png'
         },
         {
           name: "Ahmet Bulut",
           institution: "Marmara Üniversitesi İlahiyat Fakültesi",
-          image: require('../../../assets/images/Ahmet Bulut.png')
+          image: '/images/ahmetbulut.png'
         },
         {
-          name: "Kerim Buladı",
-          institution: "İstanbul İl Vaizliği",
-          image: require('../../../assets/images/Kerim BULADI.png')
+          name: "Prof. Dr. Kerim Buladı",
+          institution: "Yalova Üniversitesi İslami İlimler Fakültesi",
+          image: '/images/Kerim Buladı.png'
         }
       ],
       detailData: {
@@ -264,7 +264,7 @@ const Seminer = () => {
         {
           name: "Hüseyin Akın",
           institution: "Marmara Üniversitesi İlahiyat Fakültesi",
-          image: require('../../../assets/images/Hüseyin Akın.png')
+          image: '/images/huseyin akin.png'
         }
       ],
       detailData: {
@@ -307,7 +307,7 @@ const Seminer = () => {
         {
           name: "Dr. Ramazan Aydın",
           institution: "Türkiye Maarif Vakfı",
-          image: require('../../../assets/images/Ramazan Aydın-Photoroom.png')
+          image: '/images/ramazanaydin.png'
         }
       ],
       detailData: {
@@ -350,7 +350,7 @@ const Seminer = () => {
         {
           name: "Doç. Dr. Fatih Kucur",
           institution: "İstanbul Üniversitesi-Cerrahpaşa Öğretim Üyesi",
-          image: require('../../../assets/images/Fatih Kaçur.png')
+          image: '/images/fatih kucur.png'
         }
       ],
       detailData: {
@@ -378,8 +378,8 @@ const Seminer = () => {
         speakers: [
           {
             name: "Fatma Serap Karamollaoğlu",
-            institution: "Hacettepe Üniversitesi Eczacılık Fakültesi",
-            image: require('../../../assets/images/karamollaoğlu.png')
+            institution: "Eğitimci - Yazar",
+            image: '/images/fatmaserap.png'
           }
         ],
         detailData: {
@@ -422,7 +422,7 @@ const Seminer = () => {
           {
             name: "Dr. Necdet Subaşı",
             institution: "MEB Bakan Müşaviri",
-            image: require('../../../assets/images/Necdet Subaşı-Photoroom.png')
+            image: '/images/necdetsubai.png'
           }
         ],
         detailData: {
@@ -451,7 +451,7 @@ const Seminer = () => {
           {
             name: "Doç. Dr. Osman Sezgin",
             institution: "Rehberlik ve Psikolojik Danışmanlık Anabilim Dalı Öğretim Üyesi",
-            image: require('../../../assets/images/Osman Sezgin.png')
+            image: '/images/osman sezgin.png'
           }
         ],
         detailData: {
@@ -473,7 +473,7 @@ const Seminer = () => {
           {
             name: "Prof. Dr. Ali Osman Kuşakcı",
             institution: "İbn Haldun Üniversitesi, Yönetim Bilimleri Fakültesi",
-            image: require('../../../assets/images/Ali Kuşakçı-Photoroom.png')
+            image: '/images/alikusak.png'
           }
         ],
         detailData: {
@@ -516,7 +516,7 @@ const Seminer = () => {
           {
             name: "Dr. Fahri Güzel",
             institution: "Ağrı İbrahim Çeçen Üniversitesi İslami İlimler Fakültesi",
-            image: require('../../../assets/images/Fahri Güzel-Photoroom.png')
+            image: '/images/fahriguzel.png'
           }
         ],
         detailData: {
@@ -559,7 +559,7 @@ const Seminer = () => {
           {
             name: "Prof. Dr. Ahmet Türkan",
             institution: "Necmettin Erbakan Üniversitesi",
-            image: require('../../../assets/images/Ahmet Türkan-Photoroom.png')
+            image: '/images/ahmetturkan.png'
           }
         ],
         detailData: {
@@ -602,7 +602,7 @@ const Seminer = () => {
           {
             name: "Prof. Dr. Hasan Ayık",
             institution: "Kırgızistan Türkiye Manas Üniversitesi İlahiyat Fakültesi Dekanı",
-            image: require('../../../assets/images/Hasan Ayık.png')
+            image: '/images/hasan ayık.png'
           }
         ],
         detailData: {
@@ -630,8 +630,8 @@ const Seminer = () => {
         speakers: [
           {
             name: "Prof. Dr. Recep Şentürk",
-            institution: "Columbia University",
-            image: require('../../../assets/images/Recep Şentürk-Photoroom.png')
+            institution: "Hamad Bin Khalifa Üniversitesi İslami İlimler Fakültesi Dekanı",
+            image: '/images/recepsenturk.png'
           }
         ],
         detailData: {
@@ -666,8 +666,8 @@ const Seminer = () => {
         speakers: [
           {
             name: "Doç. Dr. Ahmet Ekşi",
-            institution: "SUSEM",
-            image: require('../../../assets/images/Ahmet Ekşi.png')
+            institution: "Kocaeli Üniversitesi İlahiyat Fakültesi",
+            image: '/images/ahmeteksi.png'
           }
         ],
         detailData: {
@@ -710,7 +710,7 @@ const Seminer = () => {
           {
             name: "Dr. Şule Şahin Ünlü",
             institution: "Öğretmen - Yazar",
-            image: require('../../../assets/images/Şule Şahin.png')
+            image: '/images/şule şahin.png'
           }
         ],
         detailData: {
@@ -753,7 +753,7 @@ const Seminer = () => {
           {
             name: "Dr. Mesut Çakır",
             institution: "Fatih Sultan Mehmet Vakıf Üniversitesi",
-            image: require('../../../assets/images/mesut Çakır.png')
+            image: '/images/mesutcakir.png'
           }
         ],
         detailData: {
@@ -796,7 +796,7 @@ const Seminer = () => {
           {
             name: "Dr. Aytaç Ören",
             institution: "Sağlık Bilimleri Üniversitesi Öğretim Üyesi",
-            image: require('../../../assets/images/Aytaç Ören.png')
+            image: '/images/Aytaç ören.png'
           }
         ],
         detailData: {
@@ -825,7 +825,7 @@ const Seminer = () => {
           {
             name: "Erol Erdoğan",
             institution: "MEB Bakan Danışmanı",
-            image: require('../../../assets/images/Erol Erdoğan.png')
+            image: '/images/erolerdogan.png'
           }
         ],
         detailData: {
@@ -868,7 +868,7 @@ const Seminer = () => {
           {
             name: "Dr. Musa Mert",
             institution: "Eğitimci Yazar",
-            image: require('../../../assets/images/MusaMert.png')
+            image: '/images/musa mert.png'
           }
         ],
         detailData: {
@@ -911,7 +911,7 @@ const Seminer = () => {
           {
             name: "Doç. Dr. Ahmet Kavlak",
             institution: "",
-            image: require('../../../assets/images/Ahmet Kavlak.png')
+            image: '/images/ahmet kavlak.png'
           }
         ],
         detailData: {
