@@ -161,7 +161,7 @@ const TeacherTeam = () => {
     },
     {
         name: "Dr. Mesut Çakır",
-        title: "(Fatih Sultan Mehmet Vakıf Üniversitesi)",
+        title: "(Hadis ABD Öğretim Üyesi Dekan Yrd. Fatih Sultan Mehmet Vakıf Üniversitesi)",
         image: "/images/mesutcakir.png",
         bio: "Tokat’ın Erbaa ilçesinde doğdu. İlk, orta ve lise tahsilini Erbaa’da tamamladı. 2004’de İstanbul Üniversitesi İlahiyat Fakültesinden mezun oldu ve aynı yıl Marmara Üniversitesi Sosyal Bilimler Enstitüsünde Hadis bölümünde yüksek lisansa başladı. 2007’de “Fezâilü’l-Kur’an hadisleri çerçevesinde Kur’an’ın ezberlenmesi ile ilgili rivayetlerin tahrîc ve değerlendirmesi” adlı teziyle yüksek lisansını tamamladı. 2018 senesinde Sakarya Üniversitesi Sosyal Bilimler Enstitüsünde Hadis bölümünde “İmam Birgivî’nin Kitâbu’l-Îmân Adlı Eserinin Tahkik ve Tahlili” adlı tezi ile doktor oldu. 2004-2020 yılları arası  DİB’e bağlı olarak İmam-Hatiplik vazifesinde bulundu.  İlahiyat Fakültesi yıllarında ve sonrasında Merhum M. Emin Saraç Hocaefendinin ders halkasında derslere devam etti. 2020 yılı Kasım ayı itibariyele Fatih Sultan Mehmet Vakıf Üniversitesinde Hadis Ana Bilim Dalında Dr. Öğretim Üyesi olarak çalışmaya başladı. Hali hazırda Öğretim üyeliği yanında İslami İlimler Fakültesi Dekan Yardımcılığı, Fakülte kurulu ve Fakülte yönetim kurulu üyelikleri ile Lisansüstü Eğitim Enstitüsü yönetim kurulu üyeliği görevlerini de yürütmektedir"
     }

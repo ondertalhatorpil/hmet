@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
-
 const styles = `
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -60,7 +59,6 @@ const Modal = ({ isOpen, onClose, children }) => {
         className="bg-white rounded-3xl modal-content w-full animate-scaleIn relative"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close button with hover effect */}
         <button
           onClick={onClose}
           className="absolute right-6 top-6 p-2 hover:bg-gray-100 rounded-full transition-colors duration-200 group z-10"
@@ -74,7 +72,6 @@ const Modal = ({ isOpen, onClose, children }) => {
           </div>
         </button>
 
-        {/* Modal Header Gradient */}
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-gray-50 to-transparent pointer-events-none" />
 
         <div className="modal-body p-8 sm:p-10 overflow-hidden">
@@ -92,25 +89,20 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
   const [visibleCards, setVisibleCards] = useState(3);
 
   useEffect(() => {
-    // Add styles to head
     const styleSheet = document.createElement("style");
     styleSheet.innerText = styles;
     document.head.appendChild(styleSheet);
-
-    // Cleanup
-    return () => {
-      styleSheet.remove();
-    };
+    return () => styleSheet.remove();
   }, []);
 
   useEffect(() => {
     const updateVisibleCards = () => {
       if (window.innerWidth < 640) {
-        setVisibleCards(1); // Mobilde 1 kart
+        setVisibleCards(1);
       } else if (window.innerWidth < 1024) {
-        setVisibleCards(2); // Tablet ve küçük ekranlarda 2 kart
+        setVisibleCards(2);
       } else {
-        setVisibleCards(3); // Masaüstü için 3 kart
+        setVisibleCards(3);
       }
     };
 
@@ -119,8 +111,10 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
     return () => window.removeEventListener('resize', updateVisibleCards);
   }, []);
 
+  const maxScroll = members.length - visibleCards;
+
   const nextSlide = () => {
-    if (currentIndex < members.length - visibleCards) {
+    if (currentIndex < maxScroll) {
       setCurrentIndex(prev => prev + 1);
     }
   };
@@ -133,7 +127,6 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
 
   return (
     <div className="w-full max-w-[1400px] mx-auto px-4 mb-24 sm:px-6 py-12 sm:py-16">
-      {/* Header Section */}
       <div className="text-center mb-12 sm:mb-16">
         <p className="text-[#BDA473] font-semibold mb-3 tracking-wide uppercase text-sm">
           {overlineText}
@@ -146,10 +139,8 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
         </p>
       </div>
 
-      {/* Gallery Section */}
       <div className="relative">
         <div className="flex items-center gap-4">
-          {/* Left Arrow */}
           <button
             onClick={prevSlide}
             className={`flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105 ${
@@ -160,19 +151,20 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
             <ChevronLeft className="w-6 h-6" />
           </button>
 
-          {/* Cards Container */}
           <div className="flex-1 overflow-hidden">
             <div 
-              className="flex transition-transform duration-500 ease-out gap-6"
+              className="flex gap-6"
               style={{ 
-                transform: `translateX(-${currentIndex * (100 / visibleCards)}%)`,
+                transform: `translateX(-${currentIndex * (100 / members.length)}%)`,
+                transition: 'transform 500ms ease-out',
+                width: `${(members.length * 100) / visibleCards}%`
               }}
             >
               {members.map((member, index) => (
                 <div
                   key={index}
-                  className="relative flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
-                  style={{ scrollSnapAlign: 'start' }}
+                  className="relative"
+                  style={{ width: `${100 / members.length}%` }}
                 >
                   <div className="relative group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 aspect-[3/4]">
                     <img
@@ -180,7 +172,6 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
                       alt={member.name}
                       className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                     />
-                    {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-end p-6">
                       <h3 className="text-white text-xl sm:text-2xl font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                         {member.name}
@@ -204,24 +195,19 @@ const TeamGallery = ({ title, subtitle, overlineText, members }) => {
             </div>
           </div>
 
-          {/* Right Arrow */}
           <button
             onClick={nextSlide}
             className={`flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl transition-all transform hover:scale-105 ${
-              currentIndex >= members.length - visibleCards ? 'opacity-50 cursor-not-allowed hover:scale-100' : ''
+              currentIndex >= maxScroll ? 'opacity-50 cursor-not-allowed hover:scale-100' : ''
             }`}
-            disabled={currentIndex >= members.length - visibleCards}
+            disabled={currentIndex >= maxScroll}
           >
             <ChevronRight className="w-6 h-6" />
           </button>
         </div>
       </div>
 
-      {/* Modal */}
-      <Modal 
-        isOpen={showModal} 
-        onClose={() => setShowModal(false)}
-      >
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
         <div className="relative">
           <div className="flex flex-col items-center text-center sm:text-left sm:flex-row gap-8">
             <div className="relative group">

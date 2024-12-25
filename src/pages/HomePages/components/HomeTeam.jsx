@@ -21,10 +21,10 @@ const HomeTeam = () => {
       bio: "1982 yılında Kırklareli’nde doğdu. 1999 yılında Kırklareli İmam Hatip Lisesi’nden mezun oldu. İstanbul Üniversitesinde İşletme Yönetimi ve Organizasyon alanında doktorasını verdi. Halen Kırklareli Üniversitesi İktisadi İdari Bilimler Fakültesi’nde öğretim üyesi olarak çalışmalarını sürdürüyor. Uluslararası hakemli dergilerde makaleleri ve çeşitli yayınevlerinde kitapları yayınlandı. İyi derecede İngilizce biliyor."
     },
      {
-      name: "Suzan Ören",
+      name: "Suzan Kucur Ören",
       title: "Proje Koordinatörü",
       image: "/images/suzanoren.png",
-      bio: "Marmara Üniversitesi İlahiyat Fakültesi’nde İslam Mezhepleri Ana Bilim Dalı’nda 2015 yılında yüksek lisans eğitimini tamamladı. Aynı yıl Anadolu Üniversitesi İktisadi ve İdari Bilimler Fakültesi Uluslararası İlişkiler Bölümü’nden mezun oldu. 2024 yılında ise Marmara Üniversitesi’nden Ortadoğu Siyasi Tarihi ve Uluslararası İlişkiler alanında doktora derecesini aldı. Doktora teziyle ilgili araştırmalar yapmak amacıyla 2023 yılında TÜBİTAK bursiyeri olarak bir yıl boyunca Endonezya’da bulundu. Halen Türkiye Maarif Vakfı Cape Town Okulu’nda okul müdürü olarak görev yapmaktadır."
+      bio: "Atatürk Üniversitesi Fen Edebiyat Fakültesi Türk Dili ve Edebiyatı bölümünü bitirdi. Çesitli STK'larda eğitim koordinatörlüğü yaptı. Değişik  dergilerde kitap tanıtımı yazıları yazdı. Özel ,  kamu kurum ve kuruluşlarında görev aldı. Halen İstanbul' da bir İmam hatip lisesinde ögretmenlik yapmaktadır."
     },
     {
         name: "Bilal Yıldızlı",
