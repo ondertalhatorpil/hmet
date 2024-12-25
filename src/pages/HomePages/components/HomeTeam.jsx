@@ -21,13 +21,13 @@ const HomeTeam = () => {
       bio: "1982 yılında Kırklareli’nde doğdu. 1999 yılında Kırklareli İmam Hatip Lisesi’nden mezun oldu. İstanbul Üniversitesinde İşletme Yönetimi ve Organizasyon alanında doktorasını verdi. Halen Kırklareli Üniversitesi İktisadi İdari Bilimler Fakültesi’nde öğretim üyesi olarak çalışmalarını sürdürüyor. Uluslararası hakemli dergilerde makaleleri ve çeşitli yayınevlerinde kitapları yayınlandı. İyi derecede İngilizce biliyor."
     },
     {
-      name: "Sultan Tekin",
+      name: "Suzan Kucur Ören",
       title: "Proje Koordinatörü",
       image: "/images/suzanoren.png",
       bio: "Atatürk Üniversitesi Fen Edebiyat Fakültesi Türk Dili ve Edebiyatı bölümünü bitirdi. Çesitli STK'larda eğitim koordinatörlüğü yaptı. Değişik  dergilerde kitap tanıtımı yazıları yazdı. Özel ,  kamu kurum ve kuruluşlarında görev aldı. Halen İstanbul' da bir İmam hatip lisesinde ögretmenlik yapmaktadır."
     },
      {
-      name: "Suzan Kucur Ören",
+      name: "Sultan Tekin",
       title: "Proje Ekibi",
       image: "/images/sultantekin.png",
       bio: "1988 yılında Tekirdağ’da doğdu. 2005 yılında Tekirdağ Tuğlacılar Süper Lisesi’nden mezun oldu. Aynı yıl başladığı Kocaeli Üniversitesi Matematik Öğretmenliği bölümünü 2009 yılında tamamladı. 2012 yılında Kamu Personeli Seçme Sınavı’nda 94,56 puan aldı ve Türkiye 240.sı olup kendi branşında derece yaparak İstanbul’a atandı. 2012-2014 yılları arasında Akşemsettin Kız Anadolu İmam Hatip Lisesi’nde, 2014-2023 yılları arasında Şehit Muhammed Aksu Kız Anadolu İmam Hatip Lisesi’nde görev yapmıştır. Halen Üsküdar Ali Fuat Başgil Kız Anadolu İmam Hatip Lisesi’nde matematik öğretmenliği görevine devam etmektedir. Öğrenciliğinde İmam Hatip okullarında okuyamasa da, İstanbul’a atandığı yıldan itibaren İmam Hatip okullarında görev yapmaktadır. 2024 yılında Fatih Sultan Mehmet Vakıf Üniversitesi Bilim Tarihi Tezli Yüksek Lisans programından mezun oldu."
