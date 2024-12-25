@@ -710,7 +710,7 @@ const Seminer = () => {
           {
             name: "Dr. Şule Şahin Ünlü",
             institution: "Öğretmen - Yazar",
-            image: '/images/şule şahin.png'
+            image: '/images/sulesahin.png'
           }
         ],
         detailData: {
@@ -796,7 +796,7 @@ const Seminer = () => {
           {
             name: "Dr. Aytaç Ören",
             institution: "Sağlık Bilimleri Üniversitesi Öğretim Üyesi",
-            image: '/images/Aytaç ören.png'
+            image: '/images/aytacoren.png'
           }
         ],
         detailData: {
