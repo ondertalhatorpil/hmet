@@ -45,7 +45,6 @@ const SSS = () => {
         <div className='SSSHomeDesc'>
           <span className="overline">YARDIM MERKEZİ</span>
           <h2>Sıkça Sorulan Sorular</h2>
-          <p>Merak ettiğiniz tüm sorulara hızlı cevaplar bulun</p>
         </div>
         <div className="faq-container">
           {faqs.map((faq, index) => (

@@ -162,7 +162,7 @@ const Seminer = () => {
       speakers: [
         {
           name: "Dr. İbrahim Çağrı Kurt",
-          institution: "Boğaziçi Üniversitesi Öğretim Üyesi",
+          institution: "Boğaziçi Üniversitesi Moleküler Biyoloji ve Genetik",
           image: '/images/ibrahimkurt.png'
         }
       ],
@@ -205,7 +205,7 @@ const Seminer = () => {
       speakers: [
         {
           name: "Abdullah Yıldız",
-          institution: "Namaz Gönüllüleri Platformu",
+          institution: "Eğitimci - Yazar",
           image: '/images/abdullah yıldız.png'
         },
         {
@@ -215,7 +215,7 @@ const Seminer = () => {
         },
         {
           name: "Ahmet Bulut",
-          institution: "Marmara Üniversitesi İlahiyat Fakültesi",
+          institution: "Eğitimci - Yazar",
           image: '/images/ahmetbulut.png'
         },
         {
@@ -349,7 +349,7 @@ const Seminer = () => {
       speakers: [
         {
           name: "Doç. Dr. Fatih Kucur",
-          institution: "İstanbul Üniversitesi-Cerrahpaşa Öğretim Üyesi",
+          institution: "İstanbul Üniversitesi Sağlık Bilimleri Fakültesi",
           image: '/images/fatih kucur.png'
         }
       ],
@@ -450,7 +450,7 @@ const Seminer = () => {
         speakers: [
           {
             name: "Doç. Dr. Osman Sezgin",
-            institution: "Rehberlik ve Psikolojik Danışmanlık Anabilim Dalı Öğretim Üyesi",
+            institution: "Marmara Üniversitesi Eğitim Fakültesi",
             image: '/images/osman sezgin.png'
           }
         ],
@@ -558,7 +558,7 @@ const Seminer = () => {
         speakers: [
           {
             name: "Prof. Dr. Ahmet Türkan",
-            institution: "Necmettin Erbakan Üniversitesi",
+            institution: "Necmettin Erbakan Üniversitesi İlahiyat Fakültesi",
             image: '/images/ahmetturkan.png'
           }
         ],
@@ -752,7 +752,7 @@ const Seminer = () => {
         speakers: [
           {
             name: "Dr. Mesut Çakır",
-            institution: "Fatih Sultan Mehmet Vakıf Üniversitesi",
+            institution: "FSM Vakıf Üniversitesi İslami İlimler Fakültesi",
             image: '/images/mesutcakir.png'
           }
         ],
@@ -795,7 +795,7 @@ const Seminer = () => {
         speakers: [
           {
             name: "Dr. Aytaç Ören",
-            institution: "Sağlık Bilimleri Üniversitesi Öğretim Üyesi",
+            institution: "Recep Tayyip Erdoğan Üniversitesi Fen Edebiyat Fakültesi",
             image: '/images/aytacoren.png'
           }
         ],

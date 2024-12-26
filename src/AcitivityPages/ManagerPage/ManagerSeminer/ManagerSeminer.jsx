@@ -128,7 +128,7 @@ const Seminer = () => {
         speakers: [
           {
             name: "Dr. Akın BULUT",
-            institution: " İbn Haldun Üniversitesi",
+            institution: " İbn Haldun Üniversitesi Eğitim Bilimleri Fakültesi",
             image: '/images/Akın Bulut.png'
           }
         ],

@@ -241,19 +241,19 @@ const seminerler = [
     speakers: [
       {
         name: "Abdullah Yıldız",
-        institution: "Namaz Gönüllüleri Platformu"
+        institution: "Eğitimci - Yazar"
       },
       {
         name: "Ramazan Kayan",
-        institution: "Namaz Gönüllüleri Platformu"
+        institution: "Eğitimci - Yazar"
       },
       {
         name: "Ahmet Bulut",
-        institution: "Namaz Gönüllüleri Platformu"
+        institution: "Eğitimci - Yazar"
       },
       {
         name: "Prof. Dr. Kerim Buladı",
-        institution: "Namaz Gönüllüleri Platformu"
+        institution: "Yalova Üniversitesi İslami İlimler Fakültesi"
       }
     ],
     detailData: {
@@ -379,7 +379,7 @@ const seminerler = [
     speakers: [
       {
         name: "Prof. Dr. Ahmet Türkan",
-        institution: "Necmettin Erbakan Üniversitesi"
+        institution: "Necmettin Erbakan Üniversitesi İlahiyat Fakültesi"
       }
     ],
     detailData: {
@@ -574,7 +574,7 @@ const seminerler = [
     speakers: [
       {
         name: "Doç. Dr. Fatih Kucur",
-        institution: "İstanbul Üniversitesi-Cerrahpaşa Öğretim Üyesi"
+        institution: "İstanbul Üniversitesi Sağlık Bilimleri Fakültesi"
       }
     ],
     detailData: {
@@ -770,7 +770,7 @@ const seminerler = [
     speakers: [
       {
         name: "Doç. Dr. Osman Sezgin",
-        institution: "Rehberlik ve Psikolojik Danışmanlık Anabilim Dalı Öğretim Üyesi"
+        institution: "Marmara Üniversitesi Eğitim Fakültesi"
       }
     ],
     detailData: {
@@ -791,7 +791,7 @@ const seminerler = [
     speakers: [
       {
         name: "Dr. Mesut Çakır",
-        institution: "Fatih Sultan Mehmet Vakıf Üniversitesi"
+        institution: "FSM Vakıf Üniversitesi İslami İlimler Fakültesi"
       }
     ],
     detailData: {
@@ -861,7 +861,7 @@ const seminerler = [
     speakers: [
       {
         name: "Dr. İbrahim Çağrı Kurt",
-        institution: "Boğaziçi Üniversitesi Öğretim Üyesi"
+        institution: "Boğaziçi Üniversitesi Moleküler Biyoloji ve Genetik"
       }
     ],
     detailData: {

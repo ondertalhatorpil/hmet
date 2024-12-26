@@ -20,7 +20,7 @@ const ManagerHeader = () => {
         logo={Logo}
         menuItems={customMenuItems}
         buttonText="KAYIT OL"
-        registerLink="https://form.onder.org.tr/app/form?id=wsGmtA" 
+        registerLink="https://form.onder.org.tr/app/form?id=mAi3Rg" 
       />
     )
 }

@@ -10,13 +10,13 @@ const TeacherTeam = () => {
     },
     {
       name: "Dr. Ömer Kemal Buhari",
-      title: "(İstanbul Medeniyet Üniversitesi Öğretim Üyesi)",
+      title: "(İstanbul Medeniyet Üniversitesi İslami İlimler Fakültesi )",
       image: "/images/omerkemali.png",
       bio: "1984'te Konya'da doğan akademisyen, İstanbul Erkek Lisesi'nde Almanca ve İngilizce öğrenirken Fransızca, İtalyanca, İspanyolca, Rusça ve Farsça dillerine ilgi duydu. 2003'te Ruprecht-Karls Heidelberg Üniversitesi'nde Felsefe ve Siyaset Bilimi okumaya başladı. Lisans ve yüksek lisans eğitimini tamamladığı süreçte Latince, Yunanca, Japonca ve Çince öğrendi. 2010'da Orta Doğu'ya seyahat ederek Tahran Üniversitesi'nde Farsça, Kahire'de Arapça eğitimi aldı. Doktorasını Malezya Uluslararası İslam Üniversitesi’nde Batı'nın İslam Düşmanlığının Kök Sebepleri konulu teziyle tamamladı. İslam-Batı ilişkileri, bilim felsefesi, tasavvuf, dinler tarihi ve siyaset felsefesi gibi alanlarda çalışmalar yaptı. İstanbul Medeniyet Üniversitesi’nde öğretim üyesidir."
     },
     {
       name: "Doç. Dr. Osman Sezgin",
-      title: "(Rehberlik ve Psikolojik Danışmanlık Anabilim Dalı Öğretim Üyesi)",
+      title: "(Marmara Üniversitesi Eğitim Fakültesi)",
       image: "/images/osman sezgin.png",
       bio: "Osman Sezgin, Marmara Üniversitesi’nde lisans ve yüksek lisans, İstanbul Üniversitesi’nde doktora eğitimini tamamladı. Akademik kariyerinde Marmara Üniversitesi’nde Eğitim Bilimleri Koordinatörlüğü yaptı ve Millî Eğitim Bakan Yardımcılığı görevinde bulundu. TRT’de gençlik programları ve radyo yayınlarına katıldı, Harp Akademileri ve Emniyet personeline eğitimler verdi. TÜBA Bilim Ödülü’ne layık görülen eserler yazdı, ulusal ve uluslararası pek çok yayına imza attı. 2000 yılında Kalem Vakfı Okulları’nı kurarak özgün eğitim programları geliştirdi. Halen Kalem Vakfı ve Türk Gençlik Vakfı başkanlığı görevlerini yürütmektedir. Evli ve üç çocuk babasıdır."
   },
@@ -35,7 +35,7 @@ const TeacherTeam = () => {
     },
     {
       name: "Hüseyin Akın",
-      title: "(Marmara Üniversitesi İlahiyat Fakültesi)",
+      title: "(Eğitimci - Yazar)",
       image: "/images/huseyin akin.png",
       bio: "1965 Sinop-Türkeli doğumlu olan yazar, Marmara Üniversitesi İlahiyat Fakültesi mezunudur. Çeşitli liselerde öğretmenlik yaptı ve kendi geliştirdiği “Çaktırmadan Öğretme Metodu”nu (Ç.Ö.M) eğitimcilerle paylaştı. Din öğretiminde yeni yaklaşımlar ve din dili eğitimi konularında çalıştı. Lise yıllarından itibaren birçok dergide yazıları yayımlandı; Özülke ve Kırknar dergilerinin yayın yönetmenliğini üstlendi. Şiir, deneme, hikâye, biyografi ve inceleme türlerinde kitaplar yazdı. Hu Dönüşü kitabıyla 2014 Türkiye Yazarlar Birliği Deneme Ödülü’ne, Yan Tesir şiir kitabıyla 2017 Eskader Şiir Ödülü’ne layık görüldü. Şiirleri Farsçaya çevrilip yayımlandı. Sokak Sosyolojisi adlı eseriyle şifahi kültüre katkı sundu."
     },
@@ -52,14 +52,14 @@ const TeacherTeam = () => {
       bio: "1972 yılında Erzurum ili Uzundere ilçesinde doğdu. İlkokulu ilçede tamamladı. İstanbul’da hafızlığını yaptı ve hafızlık sonrasında klasik Arapça eğitimi aldı. İstanbul İmam Hatip  lisesinde eğitimine devam etti. 1997 yılında Erzurum İlahiyat fakültesinden mezun oldu. 1998 yılında Din Kültürü ve Ahlak Bilgisi Öğretmeni olarak göreve başladı. 21 yıllık öğretmenlik döneminde imam hatip ortaokulu ve imam hatip lisesinde yönetici olarak görev yaptı. 2001 yılında Din Psikolojisi alanında yüksek lisansını, 2023’de doktorasını tamamladı. Şubat 2020’de Ağrı İbrahim Çeçen Üniversitesinde öğretim görevlisi olarak hizmet etmeye başladı.  Şu an Ağrı İbrahim Çeçen Üniversitesi İslami İlimler Fakültesinde Doktor Öğretim Üyesi olarak görev yapmakta olan Fahri GÜZEL, çeşitli Sivil toplum kuruluşlarında da yöneticilik görevleri üstlenmiştir. Fahri GÜZEL, evli ve dört çocuk babasıdır.  "
     },
     {
-      name: "Dr. İbrahim Çağı Kurt",
-      title: "(Boğaziçi Üniversitesi  Dr. Öğretim Üyesi)",
+      name: "Dr. İbrahim Çağrı Kurt",
+      title: "(Boğaziçi Üniversitesi Moleküler Biyoloji ve Genetik)",
       image: "/images/ibrahimkurt.png",
       bio: "İbrahim Çağrı Kurt, Bilkent Üniversitesi Moleküler Biyoloji ve Genetik Bölümü mezunudur. Koç Üniversitesi'nde yüksek lisans ve Harvard Üniversitesi'nde doktorasını tamamlamıştır. Şu anda Boğaziçi Üniversitesi'nde Dr. Öğretim Üyesi olarak görev yapmakta ve aynı zamanda Londra'da CureCraft şirketinin kurucu ortağı olarak çalışmaktadır. CRISPR teknolojileri ve genom düzenleme alanında uzmanlaşmış olup, Nature Biotechnology'de yayınları ve bir uluslararası patenti bulunmaktadır."
     },
     {
         name: "Abdullah Yıldız",
-        title: "(Namaz Gönüllüleri Platformu)",
+        title: "(Eğitimci - Yazar)",
         image: "/images/abdullah yıldız.png",
         bio: "1954 yılında Adana/Kozan'da doğdu. İlkokulu köyünde okudu. Adana İmam Hatip Lisesi’ni 1973 yılında bitirdi. Konya Selçuk Eğitim Enstitüsü’nden 1976’da mezun oldu. 1980’den itibaren çeşitli eğitim kurumlarında toplam 23 yıl öğretmenlik yaptı. Yeniden Milli Mücadele, Pınar ve Umran dergilerinde yazdı. Ocak 2001’den bu yana da her Salı günü Yeni Akit gazetesinde yazıyor. 2006’da bir grup yazar arkadaşı ile birlikte kuruluşuna öncülük ettiği Namaz Gönüllüleri Platformu’nun halen devam eden çalışmaları, binlerce insanın namazla buluşmasına ve namaz bilinci kazanmasına vesile oldu. Abdullah Yıldız evli olup, dört çocuğu, dört de torunu vardır."
     },
@@ -71,7 +71,7 @@ const TeacherTeam = () => {
     },
     {
         name: "Ahmet Bulut",
-        title: "(Marmara Üniversitesi İlahiyat Fakültesi)",
+        title: "(Eğitimci - Yazar)",
         image: "/images/ahmetbulut.png",
         bio: "1971 yılında Çanakkale’nin Bayramiç ilçesi Karaköy köyünde doğdu. İlkokulu köyde, orta ve liseyi Bayramiç İmam Hatip Lisesi’nde, üniversiteyi Marmara Üniversitesi İlahiyat Fakültesi’nde okudu. Türkiye onu namazla tanıdı. Namaz gönüllülerinin çalışmalarını organize ediyor, konferanslara katılıyor, televizyon ve radyo programları yapıyor. Evli ve dört çocuk babasıdır."
     },
@@ -107,13 +107,13 @@ const TeacherTeam = () => {
     },
     {
         name: "Prof. Dr. Ahmet Türkan",
-        title: "(Necmettin Erbakan Üniversitesi)",
+        title: "(Necmettin Erbakan Üniversitesi İlahiyat Fakültesi)",
         image: "/images/ahmetturkan.png",
         bio: "Yakında Gelecek..."
     },
     {
         name: "Doç. Dr. Fatih Kucur",
-        title: "(İstanbul Üniversitesi-Cerrahpaşa öğretim Üyesi)",
+        title: "(İstanbul Üniversitesi Sağlık Bilimleri Fakültesi)",
         image: "/images/fatih kucur.png",
         bio: "Fatih Kucur; lisans eğitimini Erzurum Atatürk Üniversitesi İktisadi ve İdari Bilimler Fakültesi İktisat Bölümünde tamamladı. 2003-2008 yılları arasında Almanya’da bulundu ve Bielefeld Üniversitesi’nde bir müddet psikoloji eğitimi aldı. 2015 Yılında İstanbul Üniversitesi İktisat Fakültesi, Çalışma Ekonomisi ve Endüstri İlişkileri Bölümünde doktorasını tamamladı. Hâlen İstanbul Üniversitesi-Cerrahpaşa Sosyal Hizmet Bölümünde öğretim üyesi olarak akademik hayatına devam etmektedir."
     },
@@ -143,7 +143,7 @@ const TeacherTeam = () => {
     },
     {
         name: "Dr. Aytaç Ören",
-        title: "(Sağlık Bilimleri Üniversitesi Öğretim Üyesi)",
+        title: "(Recep Tayyip Erdoğan Üniversitesi Fen Edebiyat Fakültesi)",
         image: "/images/aytacoren.png",
         bio: "Ankara doğumlu Aytaç Ören,1997 yılı Atatürk Üniversitesi Kazım Karabekir Eğitim Fakültesi İngilizce Öğretmenliği Bölümü mezunudur. Samuel Beckett’in Godot’yu Beklerken üzerine yüksek lisans tezi ve David Lodge’un kampüs romanlarında üstkurmaca üzerine doktora çalışması vardır. İngiliz edebiyatının önde gelen isimlerinden David Lodge’un Kurgu Sanatı, Yazıdaki Yaşamlar ve Bilinç ve Roman adlı yapıtlarını, İngiliz edebiyatında farklı bir kimlikle tanınan Graham Greene’in Generali Tanımak adlı eserini ve önemli bir boşluğu dolduracak Kenneth McMillan Newton’un Yirminci Yüzyıl Edebiyat Teorisi’ni Türkçemize kazandırmıştır. Üstkurgu kavramının Türk edebiyatında daha iyi anlaşılması için Üstkurgu/Üstkurmaca Üzerine başlıklı derlemeyi hazırlamıştır. Çağdaş Edebiyatın Kuramsal Seyri adlı çalışmanın editörlüğünü yapmıştır. Roman, roman kuramı, üstkurmaca, postmodern edebiyat teorileri ve karşılaştırmalı edebiyat üzerine çeşitli çalışmaları bulunmaktadır. Farklı kurumlarda çalıştıktan sonra şu an İstanbul’da Sağlık Bilimleri Üniversitesi’nde öğretim üyesi olarak görev yapmaktadır."
     },
@@ -154,14 +154,14 @@ const TeacherTeam = () => {
         bio: "1961 Artvin doğumludur. Atatürk Üniversitesi İslâmi İlimler Fakültesi’nde ilahiyat eğitimi aldı. 1995 yılında Din Sosyolojisi alanında doktorasını tamamladı. Akademik çalışmalarını Yüzüncü Yıl, Muğla ve Gazi Üniversitesi’nde sürdürdü. 2009-2011 yılları arasında 60. T.C. Hükümeti’nce başlatılan “Alevi Açılımı”nda genel koordinatör olarak görev ve sorumluluk üstlendi. 2011-2015 yılları arasında Diyanet İşleri Başkanlığı’nda Strateji Geliştirme Başkanı olarak görev yaptı. 2015 yılında atandığı Başbakan Başdanışmanlığı görevini hâlihazırda MEB danışmanı olarak sürdürmektedir. Subaşı, 2020 yılından itibaren tüm dünyayı kuşatan covid-19 salgın sürecinde dijital düzeyde gerçekleştirilen Karantina Sohbetleri’nin daimi moderatörlüğünü üstlendi. Subaşı, evli ve dört çocuk babasıdır.."
     },
     {
-        name: "Prof. Dr. Ahmet Kavlak",
+        name: "Doç. Dr. Ahmet Kavlak",
         title: "(Iğdır Üniversitesi İlahiyat Fakültesi)",
         image: "/images/ahmet kavlak.png",
         bio: " Samsun Endüstri Meslek Lisesi Elektronik Bölümünü bitirdi. 19 Mayıs Üniversitesi İlahiyat Fakültesinden mezun oldu. Samsun Özel Ar Lisesinde öğretmenlik yaptı, daha sonra Tokat Gazi Osman Paşa Üniversitesi Felsefe Bölümüne araştırma görevlisi olarak girdi. Yüksek lisansını “Ortega Y Gasset’in İnsan Felsefesi” adlı teziyle Gazi Üniversitesinde, doktorasını “Felsefede, Hristiyanlık ’ta ve İslamiyet’te Hermeneutik” adlı teziyle Hacettepe Üniversitesinde bitirdi. Çankırı Karatekin üniversitesi ve Ankara Yıldırım Beyazıt Üniversitesi felsefe bölümlerinde çalıştı. Halen Iğdır Üniversitesi İlahiyat Fakültesinde Felsefe ve Mantık anabilim dalında öğretim üyesi olarak çalışmaktadır"
     },
     {
         name: "Dr. Mesut Çakır",
-        title: "(Hadis ABD Öğretim Üyesi Dekan Yrd. Fatih Sultan Mehmet Vakıf Üniversitesi)",
+        title: "(FSM Vakıf Üniversitesi İslami İlimler Fakültesi)",
         image: "/images/mesutcakir.png",
         bio: "Tokat’ın Erbaa ilçesinde doğdu. İlk, orta ve lise tahsilini Erbaa’da tamamladı. 2004’de İstanbul Üniversitesi İlahiyat Fakültesinden mezun oldu ve aynı yıl Marmara Üniversitesi Sosyal Bilimler Enstitüsünde Hadis bölümünde yüksek lisansa başladı. 2007’de “Fezâilü’l-Kur’an hadisleri çerçevesinde Kur’an’ın ezberlenmesi ile ilgili rivayetlerin tahrîc ve değerlendirmesi” adlı teziyle yüksek lisansını tamamladı. 2018 senesinde Sakarya Üniversitesi Sosyal Bilimler Enstitüsünde Hadis bölümünde “İmam Birgivî’nin Kitâbu’l-Îmân Adlı Eserinin Tahkik ve Tahlili” adlı tezi ile doktor oldu. 2004-2020 yılları arası  DİB’e bağlı olarak İmam-Hatiplik vazifesinde bulundu.  İlahiyat Fakültesi yıllarında ve sonrasında Merhum M. Emin Saraç Hocaefendinin ders halkasında derslere devam etti. 2020 yılı Kasım ayı itibariyele Fatih Sultan Mehmet Vakıf Üniversitesinde Hadis Ana Bilim Dalında Dr. Öğretim Üyesi olarak çalışmaya başladı. Hali hazırda Öğretim üyeliği yanında İslami İlimler Fakültesi Dekan Yardımcılığı, Fakülte kurulu ve Fakülte yönetim kurulu üyelikleri ile Lisansüstü Eğitim Enstitüsü yönetim kurulu üyeliği görevlerini de yürütmektedir"
     }
