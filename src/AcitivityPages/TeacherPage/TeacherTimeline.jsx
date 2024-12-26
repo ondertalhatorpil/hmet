@@ -465,28 +465,28 @@ const seminerler = [
           number: 1,
           title: "İbnü'l-Arabî'de Metafizik Kavramlar",
           speaker: "Dr. Şule Şahin Ünlü",
-          startDate: "8 Ocak Çarşamba",
+          startDate: "5 Ocak Çarşamba",
           endDate: "19.00"
         },
         {
           number: 2,
           title: "Alma-Verme Dengesi ve Tasavvufî Perspektif",
           speaker: "Dr. Şule Şahin Ünlü",
-          startDate: "15 Ocak Çarşamba",
+          startDate: "12 Ocak Çarşamba",
           endDate: "21.00"
         },
         {
           number: 3,
           title: "İbadetlerin Metafizik Boyutu",
           speaker: "Dr. Şule Şahin Ünlü",
-          startDate: "22 Ocak Çarşamba",
+          startDate: "19 Ocak Çarşamba",
           endDate: "21.00"
         },
         {
           number: 4,
           title: "İbnü'l-Arabî'nin Kadın Anlayışı",
           speaker: "Dr. Şule Şahin Ünlü",
-          startDate: "5 Şubat Çarşamba",
+          startDate: "25 Şubat Çarşamba",
           endDate: "21.00"
         }
       ]

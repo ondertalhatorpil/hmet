@@ -9,10 +9,6 @@ import TeacherPage from './AcitivityPages/TeacherPage'
 import ManagerPage from './AcitivityPages/ManagerPage'
 
 
-
-
-
-
 const Router = () => {
 
     return(
