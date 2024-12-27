@@ -143,7 +143,7 @@ const TeacherTeam = () => {
     },
     {
         name: "Dr. Aytaç Ören",
-        title: "(Recep Tayyip Erdoğan Üniversitesi Fen Edebiyat Fakültesi)",
+        title: "(Sağlık Bilimleri Üniversitesi Yabancı Diller bölümü)",
         image: "/images/aytacoren.png",
         bio: "Ankara doğumlu Aytaç Ören,1997 yılı Atatürk Üniversitesi Kazım Karabekir Eğitim Fakültesi İngilizce Öğretmenliği Bölümü mezunudur. Samuel Beckett’in Godot’yu Beklerken üzerine yüksek lisans tezi ve David Lodge’un kampüs romanlarında üstkurmaca üzerine doktora çalışması vardır. İngiliz edebiyatının önde gelen isimlerinden David Lodge’un Kurgu Sanatı, Yazıdaki Yaşamlar ve Bilinç ve Roman adlı yapıtlarını, İngiliz edebiyatında farklı bir kimlikle tanınan Graham Greene’in Generali Tanımak adlı eserini ve önemli bir boşluğu dolduracak Kenneth McMillan Newton’un Yirminci Yüzyıl Edebiyat Teorisi’ni Türkçemize kazandırmıştır. Üstkurgu kavramının Türk edebiyatında daha iyi anlaşılması için Üstkurgu/Üstkurmaca Üzerine başlıklı derlemeyi hazırlamıştır. Çağdaş Edebiyatın Kuramsal Seyri adlı çalışmanın editörlüğünü yapmıştır. Roman, roman kuramı, üstkurmaca, postmodern edebiyat teorileri ve karşılaştırmalı edebiyat üzerine çeşitli çalışmaları bulunmaktadır. Farklı kurumlarda çalıştıktan sonra şu an İstanbul’da Sağlık Bilimleri Üniversitesi’nde öğretim üyesi olarak görev yapmaktadır."
     },

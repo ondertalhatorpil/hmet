@@ -795,7 +795,7 @@ const Seminer = () => {
         speakers: [
           {
             name: "Dr. Aytaç Ören",
-            institution: "Recep Tayyip Erdoğan Üniversitesi Fen Edebiyat Fakültesi",
+            institution: "Sağlık Bilimleri Üniversitesi Yabancı Diller bölümü",
             image: '/images/aytacoren.png'
           }
         ],

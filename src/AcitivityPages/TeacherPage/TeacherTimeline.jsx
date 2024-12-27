@@ -602,7 +602,7 @@ const seminerler = [
     speakers: [
       {
         name: "Dr. Aytaç Ören",
-        institution: "Sağlık Bilimleri Üniversitesi Öğretim Üyesi"
+        institution: "Sağlık Bilimleri Üniversitesi Yabancı Diller bölümü"
       }
     ],
     detailData: {
