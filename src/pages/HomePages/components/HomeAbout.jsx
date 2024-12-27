@@ -16,7 +16,7 @@ const HomeAbout = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Initial check
+        handleScroll(); 
         
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);

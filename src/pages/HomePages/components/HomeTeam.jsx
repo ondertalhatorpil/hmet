@@ -24,7 +24,7 @@ const HomeTeam = () => {
       name: "Suzan Kucur Ören",
       title: "Proje Koordinatörü",
       image: "/images/suzanoren.png",
-      bio: "Atatürk Üniversitesi Fen Edebiyat Fakültesi Türk Dili ve Edebiyatı bölümünü bitirdi. Çesitli STK'larda eğitim koordinatörlüğü yaptı. Değişik  dergilerde kitap tanıtımı yazıları yazdı. Özel ,  kamu kurum ve kuruluşlarında görev aldı. Halen İstanbul' da bir İmam hatip lisesinde ögretmenlik yapmaktadır."
+      bio: "Atatürk Üniversitesi Fen Edebiyat Fakültesi Türk Dili ve Edebiyatı bölümünü bitirdi. Çesitli STK'larda eğitim koordinatörlüğü yaptı. Farklı dergilerde kitap tanıtımı yazıları yazdı. Özel ,  kamu kurum ve kuruluşlarında görev aldı. Halen İstanbul' da bir İmam hatip lisesinde ögretmenlik yapmaktadır."
     },
      {
       name: "Sultan Tekin",
