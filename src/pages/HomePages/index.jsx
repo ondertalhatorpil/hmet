@@ -6,7 +6,6 @@ import HomeAbout from './components/HomeAbout'
 import HomeTeam from './components/HomeTeam'
 import HomeContact from './components/HomeContact'
 import HomeFooter from './components/HomeFooter'
-import HomeTimeline from './components/HomeTimeline'
 
 
 const index = () => {
@@ -16,7 +15,6 @@ const index = () => {
       <div id="about">
         <HomeAbout />
       </div>
-      <HomeTimeline />
       <div id="team">
         <HomeTeam />
       </div>
