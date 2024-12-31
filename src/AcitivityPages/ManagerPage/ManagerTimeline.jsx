@@ -66,7 +66,25 @@ const SeminarTimeline = () => {
   const scrollContainerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [selectedSeminar, setSelectedSeminar] = useState(null);  // Bunu ekledik
   const currentDate = new Date();
+
+  const scrollToSeminar = (seminerNo) => {
+    setSelectedSeminar(seminerNo);
+    const seminarElement = document.getElementById(`seminar-${seminerNo}`);
+    if (seminarElement) {
+      const yOffset = -100;
+      const y = seminarElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+      
+      // URL'e hash ekle
+      window.location.hash = `seminar-${seminerNo}`;
+    }
+};
   
   const turkishMonthToNumber = (month) => {
     const months = {
@@ -121,8 +139,8 @@ const SeminarTimeline = () => {
 
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
-      const cardWidth = 320; // w-80
-      const gap = 32; // gap-8
+      const cardWidth = 320;
+      const gap = 32;
       const scrollAmount = cardWidth + gap;
 
       const container = scrollContainerRef.current;
@@ -193,11 +211,13 @@ const SeminarTimeline = () => {
                 {formattedSeminars.map((seminer, index) => (
                   <div 
                     key={index} 
-                    className="relative w-80 flex-shrink-0"
+                    className="relative w-80 flex-shrink-0 cursor-pointer"
                     style={{ scrollSnapAlign: 'start' }}
+                    onClick={() => scrollToSeminar(seminer.seminerNo)}
                   >
                     <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className={`w-8 h-8 md:w-12 md:h-12 bg-[#D3BD92]
+                      <div className={`w-8 h-8 md:w-12 md:h-12 
+                        ${selectedSeminar === seminer.seminerNo ? 'bg-[#8B7355]' : 'bg-[#D3BD92]'}
                         rounded-full flex items-center justify-center shadow-lg
                         transition-all duration-300 hover:scale-110`}>
                         <Clock className="w-4 h-4 md:w-6 md:h-6 text-white" />
@@ -207,9 +227,11 @@ const SeminarTimeline = () => {
                     <div 
                       className={`mt-16 md:mt-20 bg-gray-800/90 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-xl 
                         transition-all duration-300 border
-                        ${nextEvent && nextEvent.seminerNo === seminer.seminerNo 
-                          ? 'border-[#D3BD92] ring-2 ring-[#D3BD92] scale-105' 
-                          : 'border-gray-700 hover:scale-105'}
+                        ${selectedSeminar === seminer.seminerNo 
+                          ? 'border-[#8B7355] ring-2 ring-[#8B7355] scale-105'
+                          : nextEvent && nextEvent.seminerNo === seminer.seminerNo 
+                            ? 'border-[#D3BD92] ring-2 ring-[#D3BD92] scale-105'
+                            : 'border-gray-700 hover:scale-105'}
                         group relative`}
                     >
                       {nextEvent && nextEvent.seminerNo === seminer.seminerNo && (
@@ -219,9 +241,11 @@ const SeminarTimeline = () => {
                       )}
 
                       <div className={`${
-                        nextEvent && nextEvent.seminerNo === seminer.seminerNo 
-                          ? 'bg-gradient-to-br from-[#D3BD92] to-[#B39B6C]'
-                          : 'bg-[#D3BD92]'
+                        selectedSeminar === seminer.seminerNo
+                          ? 'bg-[#8B7355]'
+                          : nextEvent && nextEvent.seminerNo === seminer.seminerNo 
+                            ? 'bg-gradient-to-br from-[#D3BD92] to-[#B39B6C]'
+                            : 'bg-[#D3BD92]'
                         } rounded-lg p-2 md:p-3 -mt-10 md:-mt-12 mx-auto w-24 md:w-28 text-center`}>
                         <div className="text-xl md:text-2xl font-bold text-white">
                           {seminer.date.split(' ')[0]}

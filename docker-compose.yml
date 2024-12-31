@@ -1,6 +1,17 @@
+version: '3.8'
+
 services:
   hikmetinizinde:
     build:
       context: .
+      dockerfile: Dockerfile
     ports:
-      - "8121:80"
+      - "8121:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    stdin_open: true
+    tty: true

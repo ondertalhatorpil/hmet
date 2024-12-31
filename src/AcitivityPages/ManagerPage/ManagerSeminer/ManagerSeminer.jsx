@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Masonry from 'react-masonry-css';
 import SeminerCard from '../../../components/Seminer/Seminer';
 import './Seminer.css'
 
-
 const Seminer = () => {
+  const [selectedSeminar, setSelectedSeminar] = useState(null);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const seminarNumber = parseInt(hash.replace('#seminar-', ''));
+        setSelectedSeminar(seminarNumber);
+      } else {
+        setSelectedSeminar(null);
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   const breakpointColumns = {
     default: 3,
     1200: 2,
@@ -174,7 +191,7 @@ const Seminer = () => {
         <div className="hi-seminer-header-section">
           <h1 className="hi-seminer-header">Seminerler</h1>
           <p className="hi-seminer-description">
-          Farklı Perspektiflerle Derinlemesine Öğrenin
+            Farklı Perspektiflerle Derinlemesine Öğrenin
           </p>
         </div>
         
@@ -184,13 +201,65 @@ const Seminer = () => {
           columnClassName="hi-masonry-grid_column"
         >
           {seminerler.map((seminer, index) => (
-            <SeminerCard
+            <div 
+              id={`seminar-${seminer.seminerNo}`} 
               key={seminer.seminerNo + '-' + index}
-              {...seminer}
-            />
+              className={`seminar-card-wrapper transition-all duration-700 
+                ${selectedSeminar === seminer.seminerNo ? 'scale-105' : ''}`}
+            >
+              <div className={`relative ${
+                selectedSeminar === seminer.seminerNo 
+                  ? 'ring-4 ring-[#D3BD92] rounded-lg shadow-2xl animate-highlight'
+                  : ''}`}
+              >
+                {selectedSeminar === seminer.seminerNo && (
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 
+                    bg-[#D3BD92] text-black text-sm px-4 py-1 rounded-full 
+                    font-medium z-10 whitespace-nowrap animate-bounce">
+                    Seçili Seminer
+                  </div>
+                )}
+                <SeminerCard {...seminer} />
+              </div>
+            </div>
           ))}
         </Masonry>
       </div>
+
+      <style jsx>{`
+        .seminar-card-wrapper {
+          transition: all 0.5s ease-in-out;
+        }
+
+        .animate-highlight {
+          animation: highlight 2s ease-in-out infinite;
+        }
+
+        @keyframes highlight {
+          0% {
+            box-shadow: 0 0 0 0 rgba(211, 189, 146, 0.4);
+          }
+          70% {
+            box-shadow: 0 0 0 15px rgba(211, 189, 146, 0);
+          }
+          100% {
+            box-shadow: 0 0 0 0 rgba(211, 189, 146, 0);
+          }
+        }
+
+        .animate-bounce {
+          animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+          0%, 100% {
+            transform: translateY(-5px) translateX(-50%);
+          }
+          50% {
+            transform: translateY(0) translateX(-50%);
+          }
+        }
+      `}</style>
     </div>
   );
 };

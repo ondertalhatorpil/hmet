@@ -53,7 +53,7 @@ const SeminerCard = ({
         <h3 className="hi-seminer-title">{title}</h3>
 
         <div className="hi-seminer-speakers">
-          <div className="hi-speakers-label">Konuşmacılar</div>
+          <div className="hi-speakers-label">Konuşmacı</div>
           {speakers.map((speaker, index) => (
             <div key={index} className="hi-speaker-info">
               <div className="hi-speaker-name">{speaker.name}</div>

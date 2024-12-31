@@ -1,10 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Masonry from 'react-masonry-css';
 import SeminerCard from '../../../components/Seminer/Seminer';
-import './Seminer.css'
-
 
 const Seminer = () => {
+  const [selectedSeminar, setSelectedSeminar] = useState(null);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const seminarNumber = parseInt(hash.replace('#seminar-', ''));
+        // Gelen seminarNumber'ı doğru seminere eşleştir
+        const foundSeminar = seminerler.find(s => s.seminerNo === seminarNumber);
+        if (foundSeminar) {
+          setSelectedSeminar(foundSeminar.seminerNo);
+          // Kartı görünür alana scroll et
+          const element = document.getElementById(`seminar-${seminarNumber}`);
+          if (element) {
+            setTimeout(() => {
+              element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
+          }
+        }
+      } else {
+        setSelectedSeminar(null);
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   const breakpointColumns = {
     default: 3,
     1200: 2,
@@ -935,31 +962,70 @@ const Seminer = () => {
       }
      ];
 
-  return (
-    <div className="hi-seminer-page">
-      <div className="hi-seminer-container">
-        <div className="hi-seminer-header-section">
-          <h1 className="hi-seminer-header">Seminerler</h1>
-          <p className="hi-seminer-description">
-          Farklı Perspektiflerle Derinlemesine Öğrenin
-          </p>
+     return (
+      <div className="min-h-screen py-20 md:py-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 bg-gradient-to-r from-[#BDA473] to-[#BDA473] bg-clip-text text-transparent">
+              Seminerler
+            </h1>
+            <p className="text-base md:text-lg lg:text-xl text-white/90 font-light w-full md:w-[70%] mx-auto leading-relaxed">
+              Farklı Perspektiflerle Derinlemesine Öğrenin
+            </p>
+          </div>
+          
+          <Masonry
+            breakpointCols={breakpointColumns}
+            className="flex -ml-8 w-auto"
+            columnClassName="pl-8 bg-clip-padding space-y-8"
+          >
+            {seminerler.map((seminer) => (
+              <div 
+                id={`seminar-${seminer.seminerNo}`} 
+                key={`${seminer.seminerNo}`}
+                className={`transition-all duration-700 ${
+                  selectedSeminar === seminer.seminerNo ? 'scale-105' : 'scale-100'
+                }`}
+              >
+                <div className={`relative ${
+                  selectedSeminar === seminer.seminerNo 
+                    ? 'ring-4 ring-[#BDA473] rounded-lg shadow-2xl animate-pulse' 
+                    : ''
+                }`}>
+                  {selectedSeminar === seminer.seminerNo && (
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 
+                      bg-[#BDA473] text-white text-sm px-4 py-1 rounded-full 
+                      font-medium z-10 whitespace-nowrap animate-bounce">
+                      Seçili Seminer
+                    </div>
+                  )}
+                  <SeminerCard {...seminer} />
+                </div>
+              </div>
+            ))}
+          </Masonry>
         </div>
-        
-        <Masonry
-          breakpointCols={breakpointColumns}
-          className="hi-masonry-grid"
-          columnClassName="hi-masonry-grid_column"
-        >
-          {seminerler.map((seminer, index) => (
-            <SeminerCard
-              key={seminer.seminerNo + '-' + index}
-              {...seminer}
-            />
-          ))}
-        </Masonry>
+  
+        <style jsx>{`
+          @media (max-width: 1200px) {
+            .masonry-grid {
+              margin-left: -24px;
+            }
+            .masonry-grid_column {
+              padding-left: 24px;
+            }
+          }
+          @media (max-width: 768px) {
+            .masonry-grid {
+              margin-left: -16px;
+            }
+            .masonry-grid_column {
+              padding-left: 16px;
+            }
+          }
+        `}</style>
       </div>
-    </div>
-  );
-};
-
-export default Seminer;
+    );
+  };
+  
+  export default Seminer;

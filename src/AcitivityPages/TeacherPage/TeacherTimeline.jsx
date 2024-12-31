@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Clock } from 'lucide-react';
 
 const seminerler = [
   {
-    seminerNo: 1,
+    seminerNo: 2,
     title: "Varoluşsal Tehcir Yeni Batı ve Dönüştürücü Şiddet",
     speakers: [
       {
@@ -26,7 +26,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 2,
+    seminerNo: 22,
     title: "Çocukluktan Gençliğe Eğitim ve Kültür",
     speakers: [
       {
@@ -68,7 +68,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 3,
+    seminerNo: 7,
     title: "Bana Öğretmenini Söyle",
     speakers: [
       {
@@ -110,7 +110,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 4,
+    seminerNo: 23,
     title: "Postmodern Çağda Din Eğitimi",
     speakers: [
       {
@@ -152,7 +152,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 5,
+    seminerNo: 8,
     title: "Uluslararası İlişkilerde Yumuşak Güç: Teorik Temeller ve Küresel Uygulamalar",
     speakers: [
       {
@@ -194,7 +194,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 6,
+    seminerNo: 14,
     title: "Cumhuriyetin ilk Döneminde Dinî Hayat",
     speakers: [
       {
@@ -236,7 +236,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 7,
+    seminerNo: 6,
     title: "Namazla Diriliş",
     speakers: [
       {
@@ -290,7 +290,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 8,
+    seminerNo: 10,
     title: "Kur'an'da ve Türkçede Ortak Olan Kelimelerle Kolay ve Hızlı Arapça Öğrenme Metodu",
     speakers: [
       {
@@ -332,7 +332,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 9,
+    seminerNo: 18,
     title: "Güncel Dinî Meseleler",
     speakers: [
       {
@@ -374,7 +374,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 10,
+    seminerNo: 15,
     title: "Kudüs Okumaları",
     speakers: [
       {
@@ -416,7 +416,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 11,
+    seminerNo: 17,
     title: "Postmodern Eğitim ve Gençlik",
     speakers: [
       {
@@ -451,7 +451,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 12,
+    seminerNo: 19,
     title: "İbnü'l-Arabî'nin Metafiziğinde Varlık, İbadet ve Kadın",
     speakers: [
       {
@@ -493,7 +493,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 13,
+    seminerNo: 4,
     title: "Medeniyet Mirasımızı Bugünden Okumak",
     speakers: [
       {
@@ -528,7 +528,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 14,
+    seminerNo: 3,
     title: "Filistin Direnişinden Öncü Şahsiyetler",
     speakers: [
       {
@@ -569,7 +569,7 @@ const seminerler = [
       ]
     }
   },{
-    seminerNo: 15,
+    seminerNo: 9,
     title: "Sosyal Bilimleri Yeniden Düşünmek",
     speakers: [
       {
@@ -597,7 +597,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 16,
+    seminerNo: 21,
     title: "Edebiyatta Kurgu Sanatı",
     speakers: [
       {
@@ -625,7 +625,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 17,
+    seminerNo: 16,
     title: "Aklın Dini Anlama ve Yorumlamadaki Rolü",
     speakers: [
       {
@@ -653,7 +653,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 18,
+    seminerNo: 13,
     title: "Yapay Zekâ ve Hayatımıza Yansımaları",
     speakers: [
       {
@@ -695,7 +695,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 19,
+    seminerNo: 1,
     title: "Geçmişten Günümüze Suriye ve Suriyeliler",
     speakers: [
       {
@@ -737,7 +737,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 20,
+    seminerNo: 11,
     title: "Yeni İlgiler",
     speakers: [
       {
@@ -765,7 +765,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 21,
+    seminerNo: 12,
     title: "Kaynaştırma mı Bütünleştirme mi?",
     speakers: [
       {
@@ -786,7 +786,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 22,
+    seminerNo: 20,
     title: "Hadisler ve Biz",
     speakers: [
       {
@@ -828,7 +828,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 23,
+    seminerNo: 24,
     title: "Doğru Düşünce ve Doğru İnanç",
     speakers: [
       {
@@ -856,7 +856,7 @@ const seminerler = [
     }
   },
   {
-    seminerNo: 24,
+    seminerNo: 5,
     title: "Evrim Serisi",
     speakers: [
       {
@@ -902,7 +902,24 @@ const SeminarTimeline = () => {
   const scrollContainerRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [selectedSeminar, setSelectedSeminar] = useState(null);
   const currentDate = new Date();
+
+  const scrollToSeminar = (seminerNo) => {
+    setSelectedSeminar(seminerNo);
+    const seminarElement = document.getElementById(`seminar-${seminerNo}`);
+    if (seminarElement) {
+      const yOffset = -100;
+      const y = seminarElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+      
+      window.location.hash = `seminar-${seminerNo}`;
+    }
+  };
   
   const turkishMonthToNumber = (month) => {
     const months = {
@@ -915,47 +932,53 @@ const SeminarTimeline = () => {
 
   const parseTurkishDate = (dateStr) => {
     try {
-      const parts = dateStr.split(' ');
-      const day = parts[0];
-      const month = parts[1];
-      return new Date(`2025-${turkishMonthToNumber(month)}-${day.padStart(2, '0')}`);
+      // "2025" yılını kaldır
+      dateStr = dateStr.replace(/\s+2025\s*/, '').trim();
+      const [day, month] = dateStr.split(' ');
+      const monthNumber = parseInt(turkishMonthToNumber(month)) - 1; // JavaScript'te aylar 0'dan başlar
+      return new Date(2025, monthNumber, parseInt(day));
     } catch (error) {
-      console.error('Error parsing date:', error);
+      console.error('Error parsing date:', dateStr, error);
       return new Date();
     }
   };
 
-  // Tarihe göre sırala
-  const formattedSeminars = seminerler.map(seminer => {
-    let dateStr = seminer.detailData.sessions[0].startDate;
-    dateStr = dateStr.replace(/\s+\d{4}$/, '');
-    
-    const seminerDate = parseTurkishDate(dateStr);
-    return {
-      ...seminer,
-      dateObj: seminerDate,
-      isPast: false,
-      firstSession: {
-        ...seminer.detailData.sessions[0],
-        startDate: dateStr
-      },
-      totalSessions: seminer.detailData.sessions.length,
-      speaker: seminer.speakers[0]
-    };
-  }).sort((a, b) => {
-    // Önce tarihleri karşılaştır
-    const dateComparison = a.dateObj.getTime() - b.dateObj.getTime();
-    if (dateComparison !== 0) return dateComparison;
-    
-    // Eğer tarihler aynıysa, saatleri karşılaştır
-    const timeA = parseInt(a.firstSession.endDate.replace('.', ''));
-    const timeB = parseInt(b.firstSession.endDate.replace('.', ''));
-    return timeA - timeB;
-  });
+
+  // formattedSeminars içindeki sıralama kısmını güncelleyelim
+const formattedSeminars = seminerler.map(seminer => {
+  const firstSession = seminer.detailData.sessions[0];
+  const seminerDate = parseTurkishDate(firstSession.startDate);
+  // Saat bilgisini de ekleyelim
+  const timeInMinutes = parseInt(firstSession.endDate.split('.')[0]) * 60; // Saati dakikaya çevir
+  
+  return {
+    ...seminer,
+    dateObj: seminerDate,
+    timeInMinutes, // Saat bilgisini dakika cinsinden saklayalım
+    isPast: seminerDate < currentDate,
+    firstSession: {
+      ...firstSession,
+      startDateObj: seminerDate
+    },
+    totalSessions: seminer.detailData.sessions.length,
+    speaker: seminer.speakers[0]
+  };
+}).sort((a, b) => {
+  // Önce tarihleri karşılaştır
+  const dateComparison = a.dateObj - b.dateObj;
+  
+  // Eğer tarihler aynıysa saatleri karşılaştır
+  if (dateComparison === 0) {
+    return a.timeInMinutes - b.timeInMinutes; // Önce 19:00, sonra 21:00
+  }
+  
+  return dateComparison;
+});
 
   const futureEvents = formattedSeminars.filter(s => !s.isPast);
   const nextEvent = futureEvents.length > 0 ? futureEvents[0] : null;
 
+  // Scroll kontrolü
   useEffect(() => {
     const checkScroll = () => {
       if (scrollContainerRef.current) {
@@ -968,7 +991,6 @@ const SeminarTimeline = () => {
     const container = scrollContainerRef.current;
     if (container) {
       container.addEventListener('scroll', checkScroll);
-      // İlk yüklenmede scroll durumunu kontrol et
       checkScroll();
     }
 
@@ -979,11 +1001,11 @@ const SeminarTimeline = () => {
     };
   }, []);
 
+  // Scroll işlevi
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
-      // Bir kartın genişliği + gap
-      const cardWidth = 340; // md breakpoint'teki kart genişliği
-      const gap = 32; // md:gap-8 = 32px
+      const cardWidth = 320;
+      const gap = 32;
       const scrollAmount = cardWidth + gap;
 
       const container = scrollContainerRef.current;
@@ -997,21 +1019,21 @@ const SeminarTimeline = () => {
   };
 
   return (
-    <div className="min-h-screen p-2 sm:p-4 md:p-8 flex items-center justify-center w-full h-full">
-      <div className="max-w-full mx-auto mt-16 md:mt-40">
-        <div className="text-center mb-6 md:mb-16">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#D3BD92] mb-4 md:mb-6">
+    <div className="min-h-screen p-4 md:p-8 flex items-center justify-center w-full">
+      <div className="max-w-full mt-16 md:mt-32">
+        <div className="text-center mb-8 md:mb-16">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#BDA473] mb-4 md:mb-6 bg-gradient-to-r from-[#BDA473] to-[#BDA473] bg-clip-text text-transparent">
             2025 Seminer Programı
           </h1>
           
-          <div className="max-w-xs sm:max-w-sm md:max-w-xl mx-auto bg-gray-800/30 p-3 sm:p-4 md:p-6 rounded-2xl backdrop-blur-sm">
-            <div className="flex justify-between text-white mb-2 text-xs sm:text-sm md:text-base">
+          <div className="max-w-xs sm:max-w-sm md:max-w-xl mx-auto bg-gray-800/30 p-4 md:p-6 rounded-2xl backdrop-blur-sm">
+            <div className="flex justify-between text-white mb-2 text-sm md:text-base">
               <span>Program İlerlemesi</span>
               <span>{formattedSeminars.filter(s => s.isPast).length} / {formattedSeminars.length} Program Tamamlandı</span>
             </div>
             <div className="w-full bg-gray-700 rounded-full h-2">
               <div 
-                className="bg-[#D3BD92] h-2 rounded-full transition-all duration-1000"
+                className="bg-[#BDA473] h-2 rounded-full transition-all duration-1000"
                 style={{ width: `${(formattedSeminars.filter(s => s.isPast).length / formattedSeminars.length) * 100}%` }}
               ></div>
             </div>
@@ -1019,46 +1041,47 @@ const SeminarTimeline = () => {
         </div>
         
         <div className="relative">
-        {canScrollLeft && (
-  <button 
-    onClick={() => scroll('left')}
-    className="absolute left-2 sm:left-4 md:left-8 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800/80 p-4 rounded-full text-white hover:bg-gray-700 backdrop-blur-sm transition-all hover:scale-110"
-    aria-label="Önceki"
-  >
-    <ChevronLeft className="w-6 h-6" />
-  </button>
-)}
+          {/* Scroll Butonları */}
+          {canScrollLeft && (
+            <button 
+              onClick={() => scroll('left')}
+              className="absolute left-0 md:left-8 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800/80 p-4 rounded-full text-white hover:bg-gray-700 backdrop-blur-sm transition-all hover:scale-110"
+              aria-label="Önceki"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+          )}
+          
+          {canScrollRight && (
+            <button 
+              onClick={() => scroll('right')}
+              className="absolute right-0 md:right-8 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800/80 p-4 rounded-full text-white hover:bg-gray-700 backdrop-blur-sm transition-all hover:scale-110"
+              aria-label="Sonraki"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+          )}
 
-{canScrollRight && (
-  <button 
-    onClick={() => scroll('right')}
-    className="absolute right-2 sm:right-4 md:right-8 top-1/2 transform -translate-y-1/2 z-10 bg-gray-800/80 p-4 rounded-full text-white hover:bg-gray-700 backdrop-blur-sm transition-all hover:scale-110"
-    aria-label="Sonraki"
-  >
-    <ChevronRight className="w-6 h-6" />
-  </button>
-)}
-
+          {/* Timeline Kartları */}
           <div 
             ref={scrollContainerRef}
-            className="overflow-x-auto pb-8 mx-2 md:mx-16 relative scrollbar-hide"
-            style={{
-              scrollSnapType: 'x mandatory',
-              WebkitOverflowScrolling: 'touch'
-            }}
+            className="overflow-x-auto scrollbar-hide pb-8 mx-2 md:mx-16 relative"
+            style={{ scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}
           >
             <div className="relative min-w-max">
-              <div className="absolute h-1 w-full top-24 bg-[#D3BD92]"></div>
+              <div className="absolute h-1 w-full top-24 bg-[#BDA473]"></div>
               
               <div className="flex gap-4 md:gap-8 pt-8 px-4 md:px-8">
                 {formattedSeminars.map((seminer, index) => (
                   <div 
                     key={index} 
-                    className="relative w-[300px] sm:w-[320px] md:w-[340px] flex-shrink-0"
+                    className="relative w-80 flex-shrink-0 cursor-pointer"
                     style={{ scrollSnapAlign: 'start' }}
+                    onClick={() => scrollToSeminar(seminer.seminerNo)}
                   >
                     <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className={`w-8 h-8 md:w-12 md:h-12 bg-[#D3BD92]
+                      <div className={`w-8 h-8 md:w-12 md:h-12 
+                        ${selectedSeminar === seminer.seminerNo ? 'bg-[#8B7355]' : 'bg-[#BDA473]'}
                         rounded-full flex items-center justify-center shadow-lg
                         transition-all duration-300 hover:scale-110`}>
                         <Clock className="w-4 h-4 md:w-6 md:h-6 text-white" />
@@ -1067,22 +1090,25 @@ const SeminarTimeline = () => {
                     
                     <div 
                       className={`mt-16 md:mt-20 bg-gray-800/90 backdrop-blur-sm p-4 md:p-6 rounded-2xl shadow-xl 
-                        transition-all duration-300 border
-                        ${nextEvent && nextEvent.seminerNo === seminer.seminerNo 
-                          ? 'border-[#D3BD92] ring-2 ring-[#D3BD92] scale-105' 
-                          : 'border-gray-700 hover:scale-105'}
-                        group relative`}
+                        transition-all duration-500 border group relative
+                        ${selectedSeminar === seminer.seminerNo 
+                          ? 'border-[#8B7355] ring-4 ring-[#8B7355]/50 scale-110 shadow-2xl shadow-[#8B7355]/20 animate-pulse'
+                          : nextEvent && nextEvent.seminerNo === seminer.seminerNo 
+                            ? 'border-[#BDA473] ring-2 ring-[#BDA473] scale-105'
+                            : 'border-gray-700 hover:scale-105 hover:shadow-lg hover:border-[#BDA473]/30 hover:bg-gray-800/95'}`}
                     >
                       {nextEvent && nextEvent.seminerNo === seminer.seminerNo && (
-                        <div className="absolute -top-3 right-4 bg-[#D3BD92] text-black text-xs px-3 py-1 rounded-full font-medium animate-pulse">
+                        <div className="absolute -top-3 right-4 bg-[#BDA473] text-white text-xs px-3 py-1 rounded-full font-medium animate-pulse">
                           Yaklaşan Seminer
                         </div>
                       )}
 
                       <div className={`${
-                        nextEvent && nextEvent.seminerNo === seminer.seminerNo 
-                          ? 'bg-gradient-to-br from-[#D3BD92] to-[#B39B6C]'
-                          : 'bg-[#D3BD92]'
+                        selectedSeminar === seminer.seminerNo
+                          ? 'bg-[#8B7355]'
+                          : nextEvent && nextEvent.seminerNo === seminer.seminerNo 
+                            ? 'bg-gradient-to-br from-[#BDA473] to-[#B39B6C]'
+                            : 'bg-[#BDA473]'
                         } rounded-lg p-2 md:p-3 -mt-10 md:-mt-12 mx-auto w-24 md:w-28 text-center`}>
                         <div className="text-xl md:text-2xl font-bold text-white">
                           {seminer.firstSession.startDate.split(' ')[0]}
@@ -1092,7 +1118,7 @@ const SeminarTimeline = () => {
                         </div>
                       </div>
 
-                      <h3 className="text-white font-semibold text-base md:text-lg mt-4 text-center group-hover:text-[#D3BD92] transition-colors line-clamp-2">
+                      <h3 className="text-white font-semibold text-base md:text-lg mt-4 text-center group-hover:text-[#BDA473] transition-colors line-clamp-2">
                         {seminer.title}
                       </h3>
 
@@ -1106,11 +1132,10 @@ const SeminarTimeline = () => {
                       </div>
 
                       {seminer.totalSessions > 1 && (
-                        <div className="text-center text-[#D3BD92] text-xs mt-2">
+                        <div className="text-center text-[#BDA473] text-xs mt-2">
                           {seminer.totalSessions} Oturum
                         </div>
                       )}
-
                     </div>
                   </div>
                 ))}
