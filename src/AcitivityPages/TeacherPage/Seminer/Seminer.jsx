@@ -46,7 +46,7 @@ const Seminer = () => {
         {
           name: "Zahide Tuba Kor",
           institution: "Yazar",
-          image: '/images/zahidekor.png'
+          image: '/images/zahidetkor.png'
         }
       ],
       detailData: {

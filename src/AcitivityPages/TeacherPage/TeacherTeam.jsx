@@ -5,7 +5,7 @@ const TeacherTeam = () => {
     {
       name: "Zahide Tuba Kor",
       title: "(Yazar)",
-      image: "/images/zahidekor.png",
+      image: "/images/zahidetkor.png",
       bio: "Marmara Üniversitesi Siyaset Bilimi ve Uluslararası İlişkiler Bölümü'nde 2003 yılında lisansını, 2007 yılında ise Türkiye-Suriye ilişkileri üzerine yazdığı teziyle yüksek lisansını tamamladı. 2004-2010 yılları arasında Anlayış Dergisi’nde yazar ve editör, 2010-2014 yılları arasında da BİSAV Küresel Araştırmalar Merkezi'nde koordinatör yardımcısı olarak çalıştı. Halihazırda yabancı basından Türkiye, Ortadoğu ve dünya siyasetiyle ilgili tercümeler yapmakta ve çeşitli STK'larda Ortadoğu'yla ilgili seminerler vermektedir. Araştırma konuları arasında Ortadoğu, dinler ve mezhepler tarihi bulunmaktadır. Yayınlanmış çok sayıda yazısı, infografiği ve tercümesi vardır."
     },
     {
