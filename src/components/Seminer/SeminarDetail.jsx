@@ -26,9 +26,9 @@ const SeminarDetail = ({ isOpen, onClose, seminarData }) => {
               </Dialog.Title>
             </div>
             <div className="hi-dialog-actions">
-              <button className="hi-add-calendar-btn">
+              <a href='https://workspace.google.com/intl/tr/products/calendar/' className="hi-add-calendar-btn">
                 Takvime Ekle
-              </button>
+              </a>
               <button
                 className="hi-close-btn"
                 onClick={onClose}
