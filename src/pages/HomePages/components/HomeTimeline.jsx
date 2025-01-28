@@ -283,7 +283,7 @@ const seminerler = [
           number: 4,
           title: "Gençler ve Namaz",
           speaker: "Ahmet Bulut",
-          startDate: "4 Şubat Salı",
+          startDate: "1 Şubat Cumartesi",
           endDate: "21.00"
         }
       ]

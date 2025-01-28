@@ -278,7 +278,7 @@ const Seminer = () => {
             number: 4,
             title: "Gençler ve Namaz",
             speaker: "Ahmet Bulut",
-            startDate: "4 Şubat 2025 Salı",
+            startDate: "1 Şubat 2025 Cumartesi",
             endDate: "21.00"
           }
         ]
