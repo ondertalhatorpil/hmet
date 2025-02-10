@@ -48,69 +48,58 @@ const CertificateGenerator = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!name.trim() || !assetsLoaded) return;
-
+    
         setIsGenerating(true);
         setProgress(0);
-
+    
         try {
             for (let i = 0; i <= 50; i++) {
                 setProgress(i);
                 await new Promise(resolve => setTimeout(resolve, 30));
             }
-
+    
             const canvas = canvasRef.current;
             if (!canvas) throw new Error('Canvas element not found');
-
+    
             const ctx = canvas.getContext('2d');
             if (!ctx) throw new Error('Unable to get 2D context from canvas');
-
+    
             const backgroundImage = await new Promise((resolve, reject) => {
                 const img = new Image();
                 img.onload = () => resolve(img);
                 img.onerror = reject;
                 img.src = backgroundImageSrc;
             });
-
+    
             canvas.width = backgroundImage.width;
             canvas.height = backgroundImage.height;
             ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
-
+    
             ctx.font = '900 35px "Montserrat"';
             ctx.fillStyle = textColor;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-
+    
             const turkishToUpper = (text) => {
                 return text
                     .replace(/i/g, 'İ')
                     .toUpperCase();
             };
-
+    
             const decodedName = turkishToUpper(name);
-            const words = decodedName.split(' ');
-
+            
             const fontSize = 62;
-            const lineHeight = fontSize * 3.6;
-
-            let lines = words.length >= 3
-                ? [words.slice(0, -1).join(' '), words[words.length - 1]]
-                : [decodedName];
-
-            const totalTextHeight = lines.length * lineHeight;
-            let startY = (canvas.height * 0.62) - (totalTextHeight / 2) + (fontSize / 2);
-
-            lines.forEach((line, i) => {
-                const y = startY + (i * lineHeight);
-                ctx.fillText(line, canvas.width / 2, y);
-            });
-
+            const y = canvas.height * 0.55;
+            
+            ctx.fillText(decodedName, canvas.width / 2, y);
+    
             const generatedImage = canvas.toDataURL();
-
+    
             for (let i = 51; i <= 100; i++) {
                 setProgress(i);
                 await new Promise(resolve => setTimeout(resolve, 20));
             }
-
+    
             setGeneratedImages([generatedImage]);
         } catch (err) {
             console.error('Error generating images:', err);
@@ -125,12 +114,12 @@ const CertificateGenerator = () => {
 
         try {
             const blob = await (await fetch(generatedImages[0])).blob();
-            const file = new File([blob], 'hatira.png', { type: 'image/png' });
+            const file = new File([blob], 'SERTİFİKA.png', { type: 'image/png' });
 
             if (navigator.canShare && navigator.canShare({ files: [file] })) {
                 await navigator.share({
                     files: [file],
-                    title: 'Ulaştırma Memur-Sen 22. Yıl Hatıra Kartı'
+                    title: 'Hikmetin İzinde Yönetici Akademisi'
                 });
             }
         } catch (error) {
@@ -142,7 +131,7 @@ const CertificateGenerator = () => {
         if (!generatedImages[0]) return;
         const link = document.createElement('a');
         link.href = generatedImages[0];
-        link.download = 'hatira.png';
+        link.download = 'SERTİFİKA.png';
         link.click();
     };
 

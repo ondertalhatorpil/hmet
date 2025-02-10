@@ -87,22 +87,11 @@ const CertificateGenerator = () => {
         };
 
         const decodedName = turkishToUpper(name);
-        const words = decodedName.split(' ');
-
+        
         const fontSize = 62;
-        const lineHeight = fontSize * 3.6;
-
-        let lines = words.length >= 3
-            ? [words.slice(0, -1).join(' '), words[words.length - 1]]
-            : [decodedName];
-
-        const totalTextHeight = lines.length * lineHeight;
-        let startY = (canvas.height * 0.62) - (totalTextHeight / 2) + (fontSize / 2);
-
-        lines.forEach((line, i) => {
-            const y = startY + (i * lineHeight);
-            ctx.fillText(line, canvas.width / 2, y);
-        });
+        const y = canvas.height * 0.55;
+        
+        ctx.fillText(decodedName, canvas.width / 2, y);
 
         const generatedImage = canvas.toDataURL();
 
@@ -130,7 +119,7 @@ const CertificateGenerator = () => {
       if (navigator.canShare && navigator.canShare({ files: [file] })) {
         await navigator.share({
           files: [file],
-          title: 'Ulaştırma Memur-Sen 22. Yıl Hatıra Kartı'
+          title: 'Hikmetin İzinde Öğretmen Akademisi'
         });
       }
     } catch (error) {
@@ -142,7 +131,7 @@ const CertificateGenerator = () => {
     if (!generatedImages[0]) return;
     const link = document.createElement('a');
     link.href = generatedImages[0];
-    link.download = 'hatira.png';
+    link.download = 'SERTİFİKA.png';
     link.click();
   };
 
@@ -225,7 +214,6 @@ const CertificateGenerator = () => {
               </div>
             )}
 
-            {/* Add this inside the generatedImages conditional render, after the buttons */}
             <div className="mt-6 text-gray-400 text-sm sm:text-base text-center space-y-2">
               <p>Yüksek kalitede indirmek için "İndir" butonunu kullanınız.</p>
               <p className="text-[#BDA473]">Not: İsminizde Türkçe karakter sorunu varsa sayfayı yenileyiniz!</p>
