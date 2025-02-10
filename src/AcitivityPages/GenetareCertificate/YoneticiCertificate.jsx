@@ -10,13 +10,13 @@ const CertificateGenerator = () => {
     const [assetsLoaded, setAssetsLoaded] = useState(false);
 
     const canvasRef = useRef(null);
-    const backgroundImageSrc = './hatra.jpg';
+    const backgroundImageSrc = './yonetici.jpeg';
     const textColor = '#343434';
 
     const loadAssets = async () => {
         try {
             console.log('Font yükleme başladı');
-            await document.fonts.load('900 62px "Montserrat"');
+            await document.fonts.load('900 12px "Montserrat"');
             console.log('Font yüklendi');
 
             console.log('Görsel yükleme başladı:', backgroundImageSrc);
@@ -75,7 +75,7 @@ const CertificateGenerator = () => {
             canvas.height = backgroundImage.height;
             ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
-            ctx.font = '900 195px "Montserrat"';
+            ctx.font = '900 35px "Montserrat"';
             ctx.fillStyle = textColor;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
@@ -97,7 +97,7 @@ const CertificateGenerator = () => {
                 : [decodedName];
 
             const totalTextHeight = lines.length * lineHeight;
-            let startY = (canvas.height * 0.77) - (totalTextHeight / 2) + (fontSize / 2);
+            let startY = (canvas.height * 0.62) - (totalTextHeight / 2) + (fontSize / 2);
 
             lines.forEach((line, i) => {
                 const y = startY + (i * lineHeight);

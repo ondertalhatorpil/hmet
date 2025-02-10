@@ -10,7 +10,7 @@ const CertificateGenerator = () => {
   const [assetsLoaded, setAssetsLoaded] = useState(false);
 
   const canvasRef = useRef(null);
-  const backgroundImageSrc = './hatra.jpg';
+  const backgroundImageSrc = './ogretmen.jpeg';
   const textColor = '#343434';
 
   const loadAssets = async () => {
@@ -53,72 +53,72 @@ const CertificateGenerator = () => {
     setProgress(0);
 
     try {
-      for (let i = 0; i <= 50; i++) {
-        setProgress(i);
-        await new Promise(resolve => setTimeout(resolve, 30));
-      }
+        for (let i = 0; i <= 50; i++) {
+            setProgress(i);
+            await new Promise(resolve => setTimeout(resolve, 30));
+        }
 
-      const canvas = canvasRef.current;
-      if (!canvas) throw new Error('Canvas element not found');
+        const canvas = canvasRef.current;
+        if (!canvas) throw new Error('Canvas element not found');
 
-      const ctx = canvas.getContext('2d');
-      if (!ctx) throw new Error('Unable to get 2D context from canvas');
+        const ctx = canvas.getContext('2d');
+        if (!ctx) throw new Error('Unable to get 2D context from canvas');
 
-      const backgroundImage = await new Promise((resolve, reject) => {
-        const img = new Image();
-        img.onload = () => resolve(img);
-        img.onerror = reject;
-        img.src = backgroundImageSrc;
-      });
+        const backgroundImage = await new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = () => resolve(img);
+            img.onerror = reject;
+            img.src = backgroundImageSrc;
+        });
 
-      canvas.width = backgroundImage.width;
-      canvas.height = backgroundImage.height;
-      ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+        canvas.width = backgroundImage.width;
+        canvas.height = backgroundImage.height;
+        ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
 
-      ctx.font = '900 195px "Montserrat"';
-      ctx.fillStyle = textColor;
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
+        ctx.font = '900 35px "Montserrat"';
+        ctx.fillStyle = textColor;
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
 
-      const turkishToUpper = (text) => {
-        return text
-          .replace(/i/g, 'İ')
-          .toUpperCase();
-      };
+        const turkishToUpper = (text) => {
+            return text
+                .replace(/i/g, 'İ')
+                .toUpperCase();
+        };
 
-      const decodedName = turkishToUpper(name);
-      const words = decodedName.split(' ');
+        const decodedName = turkishToUpper(name);
+        const words = decodedName.split(' ');
 
-      const fontSize = 62;
-      const lineHeight = fontSize * 3.6;
+        const fontSize = 62;
+        const lineHeight = fontSize * 3.6;
 
-      let lines = words.length >= 3
-        ? [words.slice(0, -1).join(' '), words[words.length - 1]]
-        : [decodedName];
+        let lines = words.length >= 3
+            ? [words.slice(0, -1).join(' '), words[words.length - 1]]
+            : [decodedName];
 
-      const totalTextHeight = lines.length * lineHeight;
-      let startY = (canvas.height * 0.77) - (totalTextHeight / 2) + (fontSize / 2);
+        const totalTextHeight = lines.length * lineHeight;
+        let startY = (canvas.height * 0.62) - (totalTextHeight / 2) + (fontSize / 2);
 
-      lines.forEach((line, i) => {
-        const y = startY + (i * lineHeight);
-        ctx.fillText(line, canvas.width / 2, y);
-      });
+        lines.forEach((line, i) => {
+            const y = startY + (i * lineHeight);
+            ctx.fillText(line, canvas.width / 2, y);
+        });
 
-      const generatedImage = canvas.toDataURL();
+        const generatedImage = canvas.toDataURL();
 
-      for (let i = 51; i <= 100; i++) {
-        setProgress(i);
-        await new Promise(resolve => setTimeout(resolve, 20));
-      }
+        for (let i = 51; i <= 100; i++) {
+            setProgress(i);
+            await new Promise(resolve => setTimeout(resolve, 20));
+        }
 
-      setGeneratedImages([generatedImage]);
+        setGeneratedImages([generatedImage]);
     } catch (err) {
-      console.error('Error generating images:', err);
-      setError(err.message);
+        console.error('Error generating images:', err);
+        setError(err.message);
     } finally {
-      setIsGenerating(false);
+        setIsGenerating(false);
     }
-  };
+};
 
   const shareImage = async () => {
     if (!generatedImages[0]) return;
