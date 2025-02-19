@@ -142,7 +142,7 @@ const CertificateGenerator = () => {
                     <div className="max-w-4xl mx-auto bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 border border-[#BDA473]/20">
                         <div className="text-center mb-8">
                             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#BDA473] mb-4 bg-gradient-to-r from-[#BDA473] to-[#BDA473] bg-clip-text text-transparent">
-                                ÖNDER Yönetici Akademisi
+                                Yönetici Akademisi
                             </h1>
                             <span className="text-2xl text-[#BDA473]/80 mt-2 block">Sertifika Oluşturma</span>
                         </div>
